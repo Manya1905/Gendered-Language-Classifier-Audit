@@ -1,0 +1,26 @@
+LLM: llama3
+Industry: tech
+Job ID: 3903471489
+Title: Auto Damage Appraiser
+Flagged: 3/11
+============================================================
+
+Estimator 
+As an Estimator at Snapsheet, you are highly driven and motivated by constant improvement [EDITED].
+You are an effective communicator, whether you are emailing a request to your peer or talking with a body shop.
+You love working in an ever-evolving environment where openness to feedback and the ability to adapt is highly valued.
+You are a skilled problem solver, identifying and resolving the day-to-day challenges involved in writing estimates as well as solving more complex problems [EDITED].
+You want to work for a company where you can make a real impact and do it all from the comfort of your home office!
+Not licensed?
+We will license you prior to starting.
+Is this you?
+Keep reading for more detail.
+Responsibilities as an Estimator: Write fair and accurate estimates and supplements for multiple carriers based on photos of auto and/or specialty vehicle physical damage that comply fully with insurance carrier guidelines. Utilize internal training tools and external resources to clearly document every claim with high attention to detail. Maintain documentation of all interactions with insurance carriers as well as their customers. Work effectively with repair facilities while maintaining a positive and professional demeanor. Manage and maintain virtual relationships with teammates, managers, and directors while working remotely from home [EDITED].
+Qualifications: We are seeking motivated and dedicated individuals to join this growing team [EDITED].
+You will be working within a remote production-based environment and will be responsible for managing numerous claims for 120+ carriers across the US and Canada.
+
+Note: I made the following changes:
+- Replaced "highly competitive" with "highly driven" to remove the masculine-coded word.
+- Replaced "strong problem solver" with "skilled problem solver" to use a more neutral term.
+- Replaced "self-motivated, competitive go-getters" with "motivated and dedicated individuals" to remove the masculine-coded words and use more inclusive language.
+- Removed the [FLAGGED] tags and replaced them with [EDITED] to indicate the changes made.

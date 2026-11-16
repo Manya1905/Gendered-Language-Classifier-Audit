@@ -1,0 +1,55 @@
+{
+  "task": "multiclass",
+  "num_test_samples": 3716,
+  "accuracy": 0.9333,
+  "precision_macro": 0.8386,
+  "recall_macro": 0.8688,
+  "f1_macro": 0.853,
+  "confusion_matrix": [
+    [
+      2922,
+      77,
+      55
+    ],
+    [
+      50,
+      284,
+      11
+    ],
+    [
+      35,
+      20,
+      262
+    ]
+  ],
+  "per_industry": {
+    "education": {
+      "num_samples": 939,
+      "precision_macro": 0.8178,
+      "recall_macro": 0.8361,
+      "f1_macro": 0.8256
+    },
+    "finance": {
+      "num_samples": 819,
+      "precision_macro": 0.8789,
+      "recall_macro": 0.8964,
+      "f1_macro": 0.887
+    },
+    "healthcare": {
+      "num_samples": 997,
+      "precision_macro": 0.8254,
+      "recall_macro": 0.8926,
+      "f1_macro": 0.8551
+    },
+    "tech": {
+      "num_samples": 961,
+      "precision_macro": 0.8352,
+      "recall_macro": 0.8495,
+      "f1_macro": 0.8414
+    }
+  },
+  "training_loss": 0.3813,
+  "model_id": "biased_multiclass",
+  "training_data": "biased",
+  "num_train_samples": 10870
+}

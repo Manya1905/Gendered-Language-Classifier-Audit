@@ -1,0 +1,13 @@
+LLM,Industry,Job ID,Title,Flagged,Total,Has Error,Edited Count
+gpt4,education,3884930741,Elementary School Teacher,6,11,False,6
+gpt4,education,3899527223,Chief Financial Officer,6,24,False,5
+gpt4,education,3902735841,Dean of Fellows,9,30,False,7
+gpt4,finance,3862123581,Financial Professional,12,39,False,12
+gpt4,finance,3902747685,"Product Analyst, Property Analytics",2,8,False,2
+gpt4,finance,3905214068,Content Strategist - Financial or Regulated Industry,1,4,False,1
+gpt4,healthcare,3902370373,Chief Executive Officer (CEO) - Blue Ridge Mountain Recovery Center,17,74,False,17
+gpt4,healthcare,3902735893,"Neurology Account Specialist, Northern California - Field based",7,34,False,7
+gpt4,healthcare,3905668669,Director - Events and Experiential Marketing,11,56,False,11
+gpt4,tech,3902783342,Director Customer Success,10,43,False,10
+gpt4,tech,3903471489,Auto Damage Appraiser,3,11,False,2
+gpt4,tech,3903820747,Enterprise Select Account Executive - Retail,6,28,False,2

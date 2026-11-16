@@ -1,0 +1,124 @@
+Re-evaluating all saved models on combined test set
+Job ID: 8713971
+
+Device: cpu
+WARNING: No GPU detected — training will be slow
+
+============================================================
+  DATA LOADING
+============================================================
+  Loading annotation_random.xlsx...
+    Sheets: Education, Finance, Healthcare, Tech
+    Sentences: 6,534
+    Separator rows skipped: 300
+    Blank rows skipped: 296
+
+  Random Sample — Label Distribution (both → masculine):
+    neutral     : 5,775 (88.4%)
+    masculine   : 333 (5.1%)
+    feminine    : 426 (6.5%)
+    Human overrides: 1
+  Loading annotation_biased.xlsx...
+    Sheets: Education, Finance, Healthcare, Tech
+    Sentences: 13,320
+    Separator rows skipped: 300
+    Blank rows skipped: 296
+
+  Biased Sample — Label Distribution (both → masculine):
+    neutral     : 10,797 (81.1%)
+    masculine   : 1,353 (10.2%)
+    feminine    : 1,170 (8.8%)
+    Human overrides: 0
+    WARNING: 165 flagged sentences had no label (defaulted to neutral)
+
+============================================================
+  SPLITTING (posting-level, 80/20)
+============================================================
+
+  Random: 240 train postings / 60 test postings
+    Train sentences: 5,268
+    Test sentences:  1,266
+
+  Biased: 240 train postings / 60 test postings
+    Train sentences: 10,870
+    Test sentences:  2,450
+
+  Test set: 3,716 sentences from 120 postings
+    education: 939
+    finance: 819
+    healthcare: 997
+    tech: 961
+
+============================================================
+  EVAL-ONLY MODE — loading saved models
+============================================================
+
+  Loading random_binary from output/random_binary/checkpoint-best...
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+     neutral       0.94      0.96      0.95      3054
+    gendered       0.79      0.71      0.75       662
+
+    accuracy                           0.91      3716
+   macro avg       0.86      0.83      0.85      3716
+weighted avg       0.91      0.91      0.91      3716
+
+  Threshold analysis:
+    @0.5: P=0.787 R=0.710 F1=0.747 (flagged 597/3716)
+    @0.85: P=0.804 R=0.695 F1=0.746 (flagged 572/3716)
+    @0.9: P=0.814 R=0.692 F1=0.748 (flagged 563/3716)
+
+  Loading random_multiclass from output/random_multiclass/checkpoint-best...
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+     neutral       0.95      0.96      0.95      3054
+   masculine       0.72      0.63      0.67       345
+    feminine       0.72      0.76      0.74       317
+
+    accuracy                           0.91      3716
+   macro avg       0.80      0.78      0.79      3716
+weighted avg       0.91      0.91      0.91      3716
+
+
+  Loading biased_binary from output/biased_binary/checkpoint-best...
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+     neutral       0.97      0.95      0.96      3054
+    gendered       0.80      0.86      0.83       662
+
+    accuracy                           0.94      3716
+   macro avg       0.88      0.91      0.89      3716
+weighted avg       0.94      0.94      0.94      3716
+
+  Threshold analysis:
+    @0.5: P=0.795 R=0.863 F1=0.828 (flagged 718/3716)
+    @0.85: P=0.827 R=0.840 F1=0.834 (flagged 672/3716)
+    @0.9: P=0.839 R=0.826 F1=0.833 (flagged 652/3716)
+
+  Loading biased_multiclass from output/biased_multiclass/checkpoint-best...
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+     neutral       0.97      0.96      0.96      3054
+   masculine       0.75      0.82      0.78       345
+    feminine       0.80      0.83      0.81       317
+
+    accuracy                           0.93      3716
+   macro avg       0.84      0.87      0.85      3716
+weighted avg       0.94      0.93      0.93      3716
+
+
+============================================================
+  MODEL COMPARISON — Binary Classifiers
+============================================================
+                                  Random       Biased
+  -------------------------------------------------
+
+Done! Job completed at Sun May 31 11:08:27 EDT 2026

@@ -1,0 +1,12 @@
+Industry: tech
+Test samples: 961
+
+              precision    recall  f1-score   support
+
+     neutral       0.96      0.95      0.96       787
+   masculine       0.81      0.77      0.79        99
+    feminine       0.74      0.83      0.78        75
+
+    accuracy                           0.93       961
+   macro avg       0.84      0.85      0.84       961
+weighted avg       0.93      0.93      0.93       961

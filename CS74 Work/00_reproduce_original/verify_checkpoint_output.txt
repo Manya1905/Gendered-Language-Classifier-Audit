@@ -1,0 +1,21 @@
+Random train/test postings: 240/60  sentences 5268/1266
+Biased train/test postings: 240/60  sentences 10870/2450
+Combined test: 3716 sentences, 120 postings
+              precision    recall  f1-score   support
+
+     neutral     0.9717    0.9568    0.9642      3054
+   masculine     0.7454    0.8232    0.7824       345
+    feminine     0.7988    0.8265    0.8124       317
+
+    accuracy                         0.9333      3716
+   macro avg     0.8386    0.8688    0.8530      3716
+weighted avg     0.9360    0.9333    0.9344      3716
+
+Confusion matrix (rows=true N/M/F, cols=pred N/M/F):
+ [[2922   77   55]
+ [  50  284   11]
+ [  35   20  262]]
+MATCHES PAPER: True
+macro-F1 0.8530  acc 0.9333
+saved original_test_predictions.csv
+

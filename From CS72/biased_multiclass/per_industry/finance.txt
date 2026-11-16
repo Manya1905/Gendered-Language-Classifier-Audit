@@ -1,0 +1,12 @@
+Industry: finance
+Test samples: 819
+
+              precision    recall  f1-score   support
+
+     neutral       0.98      0.96      0.97       665
+   masculine       0.79      0.87      0.83        91
+    feminine       0.87      0.86      0.86        63
+
+    accuracy                           0.95       819
+   macro avg       0.88      0.90      0.89       819
+weighted avg       0.95      0.95      0.95       819

@@ -1,0 +1,27 @@
+# Raw Kaggle data: too big for GitHub; link to the Kaggle dataset instead
+From CS72/Data/
+
+# Model weights: too big (418 MB+); share via Google Drive / Hugging Face if needed
+From CS72/biased_multiclass/checkpoint-best/
+From CS72/biased_multiclass/checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# 62 MB prediction file: under GitHub's 100 MB limit, but large
+From CS72/From Remote Server/industry_analysis_sentences.csv
+
+# Personal working notes: kept local
+Project_Proposal_Context.md
+
+# Secrets: never commit
+keys.json
+.env
+
+# Python / OS clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+Thumbs.db
+.DS_Store

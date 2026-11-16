@@ -1,0 +1,47 @@
+Sentences: 213,779   Postings: 10,000
+industry
+education     2500
+finance       2500
+healthcare    2500
+tech          2500 
+
+RECOMPUTED from industry_analysis_sentences.csv:
+            pct_masc  avg_masc  pct_fem  avg_fem
+industry                                        
+finance        77.04      1.60    53.36     1.18
+tech           67.44      1.43    49.16     1.01
+education      63.92      1.43    73.32     1.87
+healthcare     56.56      1.11    70.64     1.66 
+
+AS PRINTED in the CS72 paper (Table 4):
+            pct_masc  avg_masc  pct_fem  avg_fem
+finance         77.0      1.60     53.4     1.18
+tech            67.4      1.43     49.2     1.01
+healthcare      63.9      1.43     73.3     1.87
+education       56.6      1.11     70.6     1.66 
+
+Healthcare/Education rows swapped in paper: True
+Male-dominated avg % masc: 72.2   Female-dominated: 60.2  (paper: 72.2 vs 60.2)
+
+Most common titles in 'education':
+title
+Test Development Project Manager                                                                      43
+TEACHER-SPECIAL EDUCATION                                                                             40
+TEACHER-SCIENCE                                                                                       32
+Graduate Program                                                                                      22
+TEACHER-SOCIAL STUDIES                                                                                13
+Speech Language Pathologist                                                                           10
+Exciting Career Opportunity in China! Free Flight, Training, and Professional Development Provided     9
+Assistant Manager Student Services                                                                     9 
+
+Most common titles in 'healthcare':
+title
+Patient Care Technician                     19
+Registered Nurse                            18
+Licensed Therapist for Online Counseling    16
+Physical Therapist                          11
+Dental Assistant                             9
+Nurse Practitioner                           9
+Medical Assistant                            9
+Registered Nurse (RN)                        9 
+

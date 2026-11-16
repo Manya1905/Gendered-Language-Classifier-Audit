@@ -1,0 +1,20 @@
+Sentences: 213,779   unique: 136,752   repeated rows: 36.0%
+Masculine-predicted sentences: 13,954   unique: 10,873
+
+Most repeated masculine sentences:
+   136x  J. Galt is seeking six-figure sales talent and aggressive growth-orientedexecutives with a proven track record...
+   120x  Successful candidates willpossess a(n): Minimum 10 years of successful business experience in a marketing-inte...
+    94x  Ability to analyze data.
+    71x  We are on a journey to be 100 percent digital to meet the changing needs of the global population by developin...
+    65x  Cogent also offers superior customer support by virtue of its end-to-end control of service delivery and netwo...
+
+Postings: 10,000   exact-duplicate postings: 862
+
+            orig_%masc  dedup_%masc  postings_after_dedup
+industry                                                 
+finance           77.0         75.4                  2183
+tech              67.4         67.5                  2345
+education         63.9         64.1                  2172
+healthcare        56.6         56.2                  2438
+
+Ranking unchanged after removing exact duplicates: True

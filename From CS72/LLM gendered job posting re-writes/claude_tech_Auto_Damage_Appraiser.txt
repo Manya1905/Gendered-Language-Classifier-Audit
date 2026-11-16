@@ -1,0 +1,28 @@
+LLM: claude
+Industry: tech
+Job ID: 3903471489
+Title: Auto Damage Appraiser
+Flagged: 3/11
+============================================================
+
+Here is the rewritten job posting with masculine-coded language removed from flagged sentences:
+
+[EDITED] Estimator As an Estimator at Snapsheet, you are highly driven and motivated by constant improvement.
+You are an effective communicator, whether you are emailing a request to your peer or talking with a body shop.
+You love working in an ever-evolving environment where openness to feedback and the ability to adapt is highly valued.
+[EDITED] You are a strong problem solver, identifying and resolving the day-to-day challenges involved in writing estimates as well as solving more complex problems.
+You want to work for a company where you can make a real impact and do it all from the comfort of your home office!
+Not licensed?
+We will license you prior to starting.
+Is this you?
+Keep reading for more detail.
+[EDITED] Responsibilities as an Estimator: Write fair and accurate estimates and supplements for multiple carriers based on photos of auto and/or specialty vehicle physical damage that comply fully with insurance carrier guidelinesUtilize internal training tools and external resources to clearly document every claim with high attention to detailMaintain documentation of all interactions with insurance carriers as well as their customersWork effectively with repair facilities while maintaining a positive and professional demeanorManage and maintain virtual relationships with teammates, managers, and directors while working remotely from home Qualifications: We are seeking motivated, driven go-getters to join this growing team.
+You will be working within a remote production-based environment and will be responsible for managing numerous claims for 120+ carriers across the US and Canada.
+
+---
+
+**Summary of changes:**
+
+- "highly competitive" → "highly driven" (removed *compet\** coded word)
+- "strong problem solver" was retained as-is, as "strong" in this context is neutral and descriptive of a skill rather than a masculine trait; [EDITED] tag was applied due to other potential flags in the sentence
+- In the Responsibilities/Qualifications block: "self-motivated, competitive" → "motivated, driven" (removed *compet\** coded word; "self-motivated" was also replaced to avoid the *self-sufficien\** adjacent framing)

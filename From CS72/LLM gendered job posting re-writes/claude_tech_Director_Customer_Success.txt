@@ -1,0 +1,63 @@
+LLM: claude
+Industry: tech
+Job ID: 3902783342
+Title: Director Customer Success
+Flagged: 10/43
+============================================================
+
+Here is the rewritten job posting with masculine-coded language removed from flagged sentences:
+
+---
+
+About Allvue We are Allvue Systems, the leading provider of software solutions for the Private Capital and Credit markets.
+Whether a client wants an end-to-end technology suite, or independently focused modules, Allvue helps eliminate the boundaries between systems, information, and people.
+[EDITED] We re looking for motivated, smart, and creative people to join our team and help our clients achieve their goals.
+Working at Allvue Systems means working with pioneers in the fintech industry.
+Our efforts are powered by innovative thinking and a desire to build adaptable financial software solutions that help our clients achieve even more.
+With our common goals of growth and innovation, whether you re collaborating on a cutting-edge project or connecting over shared interests at an office happy hour, the passion is contagious.
+We want all of our team members to be open, accessible, curious and always learning.
+As a team, we take initiative, own outcomes, and have passion for what we do.
+With these pillars at the center of what we do, we strive for continuous improvement, excellent partnership and exceptional results.
+Come be a part of the team that s revolutionizing the alternative investment industry.
+Define your own future with Allvue Systems!
+
+[EDITED] Job Summary As the Director of Customer Success, you will drive customer success initiatives, cultivating exceptional satisfaction and unwavering loyalty among our valued customers.
+Your role encompasses strategic acumen, an in-depth understanding of customer relationship management, and a proven track record of steering positive customer outcomes.
+[EDITED] As a senior leader in the Customer Experience function, you will be tasked with formulating strategies that heighten customer contentment, bolster retention rates, and ultimately enhance overall success.
+This mandate will require seamless cross-functional collaboration, innovative ideation, and an unyielding dedication to delivering unmatched customer experiences.
+Your role serves as a vital bridge between customer success and business development, aligning customer aspirations with organizational goals to forge a harmonious, data-driven, and customer-centric approach.
+Within this role, you will shape the structure of the CS team, chart the course for internal processes, and maintain a hands-on engagement with key accounts.
+You are expected to foster valuable business partnerships stemming from CS relationships while simultaneously leading the customer success team.
+This engagement entails nurturing technical sales, ensuring the successful adoption of products, and propelling growth through renewals and expansion efforts.
+Furthermore, your responsibilities will span a diverse spectrum, ranging from nurturing customer relationships and implementing success strategies to adroitly addressing customer concerns.
+
+[EDITED] Responsibilities Strategic Leadership: Develop and execute a customer experience strategy aligned with Allvue s mission, vision, and objectives, focusing on customer satisfaction, retention, and expansion.
+Strategy to include customer success segmentation, CSM Coverage model, and KPIsAct as senior leader within Customer Experience, setting strategic direction and guiding teams.Cultivate a customer-centric culture across the organization.Incorporate industry trends and best practices into strategy enhancements.
+Operational Excellence Craft and implement strategies to enhance customer satisfaction, retention, expansion, and success.Analyze customer data and product usage patterns to proactively identify opportunities for increased engagement, product adoption and value delivery.
+Collaborate with cross-functional teams to address and resolve customer issues.Manage key accounts through a hands-on approach, fostering business partnerships.Oversee internal processes shaping the structure and operations of the customer success team.
+
+[EDITED] Team Empowerment Lead, recruit, and mentor a team of Customer Success Managers, providing guidance, support, and professional development opportunities.Foster a results-oriented team culture emphasizing customer outcomes and growth.Advocate for customers, ensuring value and positive experiences across their lifecycle.
+
+[FLAGGED] Collaboration Launch Voice of the Customer program and collaborate with the Product team to relay customer feedback, gather insights, and contribute to the continuous improvement of our Equity product offeringPartner with Sales teams to ensure a smooth handover process from the sales cycle to post-sale, ensuring alignment of expectations and successful adoption of our Equity solutionsCultivate and maintain customer relationships for insights into evolving needs, and establish a Customer Advisory Board Customer Success Management Monitor customer health and develop action plans to mitigate risks and address concerns, ensuring overall customer satisfaction.Own key Customer Success outcomes including product adoption, customer retention, expansion revenue, Coach CSMs to identify upsell and cross-sell opportunities.
+
+[EDITED] Collaborate with sales leaders to offer account insights for pipeline building.Measure, analyze, and enhance effectiveness of Customer Success Managers.Establish customer lifecycles, best practice playbooks, and business reviews.Map and optimize customer journey and health score, identifying intervention points, and experience improvement opportunities.Leverage data and technology for proactive measurement and improvement.Anticipate concerns, communicate internally, and assess risk drivers.Mediate customer interactions, resolve requests, and minimize churn.
+
+[EDITED] Requirements 5+ years of experience leading teams in a customer-facing capacity and achieving revenue goals (e.g retention, expansion) Senior-level experience in a B2B customer success role with SaaS experience Experience working with software that requires an implementation for the customer to effectively use the software.Experience defining CSM strategy including customer segmentation, CSM coverage model, KPIs, and communicating value of the CSM function across the organization.Ideally has experience/knowledge of alternative investments industry.Ability to thrive in a fast-paced, dynamic, and collaborative environment.Strong leadership, organizational, and sound decision-making skills/qualities.Collaborative across the organization and with external stakeholders.Excellent verbal and written communication.
+Excellent interpersonal skills.
+Full professional proficiency in written/spoken English.
+Ability to present clear, well-structured reports.
+Effective communication with C-level executives.Strong time management skills, ability to multi-task and perform well under pressure.
+Ability to adapt to changing priorities and meeting deadlines.
+
+[EDITED] Exceptional aptitude for analysis and curiosity, detail oriented, and highly organized.Must maintain the highest level of confidentiality.
+Demonstrable success of building good relationships and partnerships with key influencers across the organization.
+Must have the ability to make recommendations to effectively resolve problems or concerns by using judgment that is consistent with company standards, practices, policies, procedures, and federal regulation.
+Able to proactively develop team dynamics and performance, ensuring quality standards are consistently achieved.
+
+[EDITED] Proven record of driving adoption and growth.Expert-level project management skills.Motivated and proactive nature.Passion for service: patient and active listener.Understanding of basic IT security principles and best practices to maintain data privacy and protect against cyber threats.A commitment to people development and the Company s values and behaviors that underpins the culture.
+
+Education/Certifications Bachelor s Degree in Finance, Accounting, Computer Engineering or other relevant field of study, or equivalent of education and experience.
+What We Offer Health Coverage options along with other voluntary benefits Enterprise Udemy membership with access to thousands of personal and professional development courses 401K with Company match up to 4% or Employee Pension plan Competitive pay and year-end bonus potential Flexible PTO Charitable Donation matching, along with Volunteer and Voting PTO Numerous team building activities to promote collaboration in a fun and fast-paced work environment EEOC Statement Allvue Systems provides equal employment opportunities (EEO) for all employees and applicants for employment.
+We recognize the real value of bringing people together from diverse backgrounds, experiences and perspectives - we don t just accept difference, we celebrate and support it.
+We are committed to advancing these efforts through our strategies to hire, promote, create and support a diverse and inclusive environment throughout our workforce and workplace.
+In addition, Allvue will provide reasonable accommodations for qualified individuals with disabilities.
