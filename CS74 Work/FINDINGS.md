@@ -1,6 +1,6 @@
 # Findings Log
 
-Things found during the audit, sorted by **what they're for**. IDs (F1–F13) stay fixed because other notes refer to them.
+Things found during the audit, sorted by **what they're for**. IDs (F1–F14) stay fixed because other notes refer to them.
 
 | Section | Meaning |
 |---|---|
@@ -55,6 +55,10 @@ Things found during the audit, sorted by **what they're for**. IDs (F1–F13) st
 **F13. Splitting by company removes almost all the sentence overlap.** · *E1*
 - In CS72, about 1/3 of test sentences also appeared in training. With the new company split, only **34 of 2,767 test sentences (1.2%)** still match a training sentence (near-match).
 - **Why it matters:** test versions (a) and (b) will score almost the same, so any drop in E1 comes from the company split itself, not from removing the last duplicates. Say this when presenting the stepwise results.
+
+**F14. Folding "both" into masculine makes some feminine words look masculine in the training data.** · *E2/E3, Discussion*
+- "Interpersonal" is on the feminine list, but in the clean training set it appears in 127 flagged sentences: 72 that Claude called "both" (counted as masculine), 47 feminine, 4 masculine. So it sits in masculine-labeled sentences more often than feminine ones, and the learned keyword rule calls it masculine. Found 2026-11-17 while testing `05_evaluate.py`.
+- **Why it matters:** any model trained on these labels sees the same pattern, so a "masculine" prediction may come from a feminine word that usually sits next to masculine ones ("analytical and interpersonal skills"). Worth one minimal pair in E2 and a check in E3.
 
 **F2. Choosing the model on the test set barely mattered.** · *E1*
 - Epoch 4 beat epoch 3 by only 0.0004 on the test set.
