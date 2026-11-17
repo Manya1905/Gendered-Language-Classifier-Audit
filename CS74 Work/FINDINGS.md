@@ -1,139 +1,87 @@
 # Findings Log
 
-Running list of things discovered during the audit that should go in the CS74 report.
-Each entry: what we found, the evidence, and where it goes in the report.
-Newest entries at the bottom. Plans and to-dos stay in `Project_Proposal_Context.md`.
+Things found during the audit, sorted by **what they're for**. IDs (F1–F13) stay fixed because other notes refer to them.
+
+| Section | Meaning |
+|---|---|
+| **A. Changes an experiment** | You have to do something differently because of this. |
+| **B. Evidence for the write-up** | A result worth reporting. Doesn't change how you run anything. |
+| **C. Corrections to the CS72 paper** | Something the CS72 paper got wrong. One line each in the report. |
+| **D. Minor** | Small. At most a sentence in Limitations, or nothing. |
 
 ---
 
-## F1. The original checkpoint reproduces the paper exactly
-*2026-11-15 · Report: Methods (setup)*
+## A. Changes an experiment
 
-- **Finding:** `From CS72/biased_multiclass/checkpoint-best/` is the model in the paper. Rebuilding the original test set gives 3,716 sentences from 120 postings, and the confusion matrix matches Table 3 exactly (macro-F1 0.8530, accuracy 0.9333).
-- **Evidence:** `00_reproduce_original/verify_checkpoint_output.txt`
-- **Why it matters:** confirms we're auditing the right model and can recreate the original split exactly.
+**F6. Most enriched postings come from a few repeat employers.** · *E1*
+- 64% of enriched postings come from companies with 2+ postings (BMO alone: 13), vs. 18% in the random sample.
+- **Do:** split by company, and balance the splits by size and industry. Some companies are big enough to swing a split's size a lot: test size ranged from 2,218 to 4,092 sentences across random seeds.
 
-## F2. The checkpoint was selected on the test set
-*2026-11-14 · Report: E1, Corrections*
+**F12. Two postings the model trained on are also in the test set.** · *E1*
+- The random and enriched samples were split separately. 4 postings were drawn into both samples; two of them and landed in train on one side and test on the other: 123 test sentences (3.3%).
+- **Do:** pool both samples and split them together.
 
-- **Finding:**
-  - `train_bert.py` passes the test set as `eval_dataset` and uses `load_best_model_at_end=True`, so the best epoch was chosen by test F1.
-  - The paper says "selected by validation F1".
-- **Evidence:** `train_bert.py` (Trainer setup). Training log: epoch 4 test F1 0.8530 vs. epoch 3 0.8526.
-- **Why it matters:** confirms gap 1, but the inflation from it is tiny (0.0004). Most of any E1 drop will come from leakage.
+**F11. Unflagged sentences make the score look better than it is.** · *E1, E2*
+- 61% of test sentences contain no list word and are almost always correctly called neutral (99.4%). Macro-F1 is 0.853 on everything but 0.827 on flagged sentences only.
+- **Do:** report flagged-only scores as a headline number. Your research question is about sentences that contain a keyword, so this is the fairer measure.
 
-## F3. Labels are almost entirely Claude's, and "both" was never human-reviewed
-*2026-11-14/15 · Report: E4, Limitations, Corrections*
+**F8. Some "sentences" are whole paragraphs and get cut off.** · *E3*
+- Sentence splitting failed on run-together text. 368 training sentences exceed BERT's 128-token limit, so their ends are never seen.
+- **Do:** only use sentences of 128 tokens or fewer in E3, since attributions can't cover text the model never read.
 
-- **Finding:**
-  - Only 1 of 19,854 labels was changed by a human.
-  - The CS72 `DESIGN_DECISIONS.md` says "the human makes all final labeling decisions".
-  - `annotation_both_review.xlsx` (1,051 rows) was never filled in, so all 660 final "both" → masculine labels are Claude Sonnet's.
-  - 165 flagged sentences were never labeled and defaulted to neutral.
-- **Evidence:** the `Your Label (final)` column in both annotation files; the training log warning; the empty review workbook (in the Downloads CS72 folder).
-- **Why it matters:** supports gap 3 and motivates E4.
+**F3 (part). 165 flagged sentences were never labeled.** · *E1*
+- API failures left them blank, so they default to neutral.
+- In the original, they were **not** excluded: 141 were in train and 24 in test, all labeled neutral. The model called 11 of the 24 test ones gendered, and all 11 were counted as errors.
+- **Do (decided 2026-11-16):** don't re-label them; keep them in train and exclude them from val/test. This is a change from the original, so apply the same exclusion to **every** model compared in E1. One line in Limitations.
 
-## F4. The paper's random-vs-enriched comparison used different test sets
-*2026-11-14 · Report: Corrections*
+---
 
-- **Finding:**
-  - The paper compares random (0.83) with enriched (0.85).
-  - The random model's 0.83 was measured on the random test set only (1,266 sentences).
-  - On the same combined test set (3,716), the random model scores **0.79** (masculine F1 0.67).
-- **Evidence:** `bert_rand_multi_8710080.out` (eval on 1,266); `bert_eval_8713971.out` (eval on 3,716).
+## B. Evidence for the write-up
 
-## F5. Paper Table 4 swaps the Healthcare and Education rows
-*2026-11-14 · Report: E5, Corrections*
+**F11 (part). The model almost never detects gendered language outside the word list.** · *Main research question*
+- Out of 2,253 unflagged test sentences, it called only 14 gendered (0.6%). Several of those look genuinely gendered, e.g. "Cultivate a culture of high performance… drive for results" (masc 0.99). Under the current labels, all 14 count as errors.
+- **Why it matters:** early evidence that the model leans on the list, and an example of gap 4 penalizing beyond-list detection. *To do: hand-check the 14 during your E4 labeling session.*
 
-- **Finding:**
-  - The correct ranking is Finance (77.0%) > Tech (67.4%) > **Education (63.9%) > Healthcare (56.6%)**.
-  - Education also has the most feminine language (73.3%), not Healthcare.
-  - The male- vs female-dominated averages (72.2% vs 60.2%) are unchanged.
-- **Evidence:** `00_reproduce_original/recompute_table4_output.txt`. Industry labels were confirmed via job titles.
+**F6 (part). Repeated templates help explain why the model might rely on keywords.** · *Discussion*
+- The model trained on the same keyword-heavy templates many times over. In the enriched sample, 44.8% of sentences appear more than once.
+- **Why it matters:** this gives a plausible reason for the keyword reliance you're testing for. Recommend for future work: cap each company at 1–2 postings and remove duplicates before sampling.
 
-## F6. The enriched sample is concentrated in a few companies' templates
-*2026-11-15 · Report: E1 (dataset artifacts), Discussion, Future work*
+**F10. Claude gave different labels to identical sentences.** · *E4*
+- 151 sentences that appear more than once have conflicting labels. A likely cause is that `prelabel.py` never set temperature, so the default (1.0) made labels partly random.
+- **Why it matters:** some human–Claude disagreement in E4 will just be Claude's own randomness. The optional E4 self-agreement check measures how much.
+- **Clean example (found 2026-11-16):** the 4 postings drawn into both samples were labeled twice by Claude, once per sample. 7 of their 153 sentences got different labels the second time (e.g. masculine vs. feminine, neutral vs. feminine). No API failures are involved here, so this is true inconsistency.
+- *Caveat: some of the 151 may be failed sentences defaulting to neutral, not true inconsistency. Check before reporting the number.*
 
-- **Finding:** choosing the 75 most keyword-dense postings per industry repeatedly picked large employers whose long standard templates contain many list words.
+**F13. Splitting by company removes almost all the sentence overlap.** · *E1*
+- In CS72, about 1/3 of test sentences also appeared in training. With the new company split, only **34 of 2,767 test sentences (1.2%)** still match a training sentence (near-match).
+- **Why it matters:** test versions (a) and (b) will score almost the same, so any drop in E1 comes from the company split itself, not from removing the last duplicates. Say this when presenting the stepwise results.
 
-  | | Random | Enriched |
-  |---|---|---|
-  | Postings | 300 | 300 |
-  | Different companies | 269 | **166** |
-  | Postings from companies with 2+ postings | 54 (18%) | **191 (64%)** |
-  | Most postings from one company | 5 | **13 (BMO U.S., finance)** |
-  | Sentences that appear more than once | 10.5% | **44.8%** |
+**F2. Choosing the model on the test set barely mattered.** · *E1*
+- Epoch 4 beat epoch 3 by only 0.0004 on the test set.
+- **Why it matters:** if E1's score drops, you can say it's from leakage, not model selection.
 
-- **Also:** the keyword score isn't adjusted for posting length, so it favors long postings. The enriched sample has 13,320 sentences vs. 6,534 for random, with the same 300 postings.
-- **Why it matters:**
-  - It explains the leakage (gap 2): repeat employers make train/test overlap almost unavoidable.
-  - The model saw far fewer distinct examples than 13,320 rows suggest.
-  - A model trained on repeated keyword-heavy templates has every reason to memorize keywords, which ties directly to the main research question.
-- **Decision:** don't re-sample or build a new classifier. E1 keeps the same data and only changes the split. Report this finding plus a recommendation: cap 1–2 postings per company, adjust the keyword score for length, and remove duplicate sentences before choosing the sample.
-- **E1 plan (revised 2026-11-15):** report (a) company split only, then (b) company split plus removing any val/test sentence that also appears in training. **Leave the training data as-is**, so step (b) changes only the evaluation side. Deduplicating within training would cut the enriched data from 13,320 rows to 9,284 unique sentences (masculine 1,353 → 1,053; feminine 1,170 → 814) and adds a second change, so it's an optional extra at most.
-- **How much the test set shrinks:**
-  - *Original split:* removing test sentences seen in the model's training data cuts 3,716 → 2,500 (−33%). Masculine 345 → 253; feminine 317 → 198. This confirms the proposal's "1/3 overlap".
-  - *Company split (quick estimate, 5 seeds, 70/15/15):* only 0.4–3.4% of test sentences overlap with train. **The company split does most of the cleanup.**
-  - *But* test-set size swung from 2,218 to 4,092 sentences across seeds, because a few companies have many postings. *E1 to do:* balance the company split by size and industry, not purely at random.
-- **Evidence:** company counts from joining `job_id` to `From CS72/Data/postings.csv`. *To do: save this as a script in `00_reproduce_original/`.*
+**F1. The saved model reproduces the paper exactly.** · *Methods, 1 sentence*
+- Same confusion matrix, macro-F1 0.853. Confirms you're auditing the right model.
 
-## F7. E5 data has heavy repetition, but it doesn't change the ranking
-*2026-11-14 · Report: E5 (robustness check)*
+---
 
-- **Finding:**
-  - 36% of the 213,779 E5 sentences are repeats, and 862 of the 10,000 postings are exact duplicates.
-  - One finance employer (J. Galt) has 137 postings with the same masculine sentence.
-  - Removing exact duplicates leaves the ranking unchanged.
-- **Evidence:** `00_reproduce_original/check_duplicate_postings_output.txt`
-- **To do in E5:** a one-posting-per-company check using `company_id`.
+## C. Corrections to the CS72 paper
 
-## F8. Sentence splitting failed on run-together text
-*2026-11-14 · Report: Limitations, E3 method*
+| # | The paper says | Actually | Matters for |
+|---|---|---|---|
+| F5 | Industry ranking: Finance > Tech > **Healthcare > Education** (Table 4) | Finance > Tech > **Education > Healthcare**. The rows are swapped; the male/female group averages (72.2% vs 60.2%) are unchanged. | **E5 starting point**, so this one matters |
+| F2 | Best checkpoint chosen by validation F1 | Chosen on the test set | E1 framing |
+| F3 | Labels were reviewed by a human | 1 of 19,854 changed; the "both" review sheet was never filled in | E4 motivation |
+| F4 | Enriched beat random 0.85 vs 0.83 | Different test sets. On the same test set it's 0.85 vs **0.79**. | Correction only |
 
-- **Finding:**
-  - Postings whose line breaks were stripped produce "sentences" like `"…we serve.Position OverviewThe primary…"`.
-  - 368 training sentences exceed 128 tokens (the longest is 598) and get cut off.
-- **Decision:** keep the original segmentation. Only use sentences of 128 tokens or fewer in E3, and report the count of over-length test sentences.
-- *To do: count over-length test sentences and how many of them are gendered.*
+---
 
-## F9. CS72 planned to tune the threshold on the test set (never used)
-*2026-11-15 · Report: E5 background*
+## D. Minor
 
-- **Finding:**
-  - The CS72 `threshold_methodology.md` proposed tuning the threshold on the test set and claimed this caused "no information leakage". That plan wasn't used; the final pipeline uses argmax.
-  - The same doc notes that Gaucher et al. tested whole ads, not single sentences, so the "any masculine sentence" posting rule has no direct support from the paper.
-- **Why it matters:** E5 must tune on validation, if at all. The second point is good motivation for E5's threshold sweep.
+- **F7.** E5's 10,000 postings include repeats (862 exact duplicates), but removing them doesn't change the ranking. *At most one robustness sentence in E5.*
+- **F9.** A CS72 planning doc proposed tuning the threshold on the test set; it was never used. Its one useful point: Gaucher et al. tested whole ads, not single sentences. *Optional motivation line for E5.*
+- **F4.** See section C. It's a side claim from CS72, not central to the audit.
 
-## F10. Identical sentences got different labels
-*2026-11-15 · Report: E4, Limitations*
+---
 
-- **Finding:** in the enriched sample, 151 sentences appear more than once with **different final labels** (after collapsing "both" → masculine), e.g. neutral in one posting and masculine in another.
-- **Caveat:** some of these may come from the 165 failed sentences defaulting to neutral rather than true Claude inconsistency. *To do: separate the two cases and check the random sample too.*
-- **Why it matters:** this is direct evidence about label consistency, for E4. It also means some "errors" on the test set could be the model disagreeing with one of two contradictory labels.
-- **Likely cause (2026-11-16):** `prelabel.py` never sets `temperature`, so the API default (1.0) applied and Claude's labels were partly random. Identical sentences in different batches could get different labels. Also worth noting in Methods: the prompt shows Claude the flagged words, and it frames neutral as "ONLY" for purely structural usage, which leans borderline cases toward gendered.
-
-## F11. Unflagged sentences pad the score, and the model rarely goes beyond the list
-*2026-11-16 · Report: E1 (metrics), gap 4, main research question*
-
-- **Finding (original test set):**
-  - 61% of test sentences (2,253 / 3,716) are unflagged and auto-labeled neutral. The model predicts neutral for 2,239 of them (99.4%), so they're nearly free points.
-  - Macro-F1 is 0.853 on all test sentences but **0.827 on flagged sentences only**.
-  - The model calls only **14** unflagged sentences gendered, and all 14 count as errors. Several look genuinely gendered, e.g. "Cultivate a culture of high performance with emphasis on accountability, drive for results…" (masc 0.99) and "…passionate professionals who are dedicated wholeheartedly to our mission" (fem 0.97).
-- **Why it matters:**
-  - Gap 4 is visible in real data: going beyond the list is scored as a mistake.
-  - The model goes beyond the list in only 14 of 2,253 cases (0.6%), which is early evidence of keyword reliance.
-- **Decision:** don't remove unflagged sentences from training (that would be a new classifier). Instead, report flagged-only test scores as a headline metric in E1/E2.
-- *To do: hand-label the 14 unflagged sentences predicted gendered, to quantify how many are real detections beyond the list.*
-- **Evidence:** `00_reproduce_original/original_test_predictions.csv` (`flagged`, `pred` columns).
-
-## F12. Two whole training postings are in the test set (split done per sample)
-*2026-11-16 · Report: E1 (gap 2), Corrections*
-
-- **Finding:**
-  - `train_bert.py` splits the random and enriched samples *separately*. 4 postings are in both samples, and 3 of them landed in train on one side and test on the other.
-  - Two affect the audited (enriched) model. "Program Manager II" (3902781031, 25 test sentences) and "Teacher Sp Ed – Special Education" (3904364647, 98 test sentences) are in its training data **and** in the combined test set (via the random sample).
-  - That's **123 test sentences (3.3%)** the model saw, with the same labels, during training.
-  - The third case ("Elementary School Teacher", 3884930741) was random-train / enriched-test, so it affects only the random model.
-- **Why it matters:** this leakage is separate from boilerplate (F6). The combined test set's duplicate removal (`job_id` + `sentence_num`) only catches a posting that's in *both* test sets, not one that's in train on one side and test on the other.
-- **E1 fix:** split both samples together as one pool, grouped by company.
-- **Evidence:** a quick check reusing `verify_checkpoint.py`'s split functions. *To do: save it as a script in `00_reproduce_original/`.*
+*Evidence and scripts: `00_reproduce_original/` (F1, F5, F7). Other numbers come from quick checks that haven't been saved as scripts yet (F6, F10, F11, F12).*

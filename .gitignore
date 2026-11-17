@@ -25,3 +25,8 @@ __pycache__/
 .ipynb_checkpoints/
 Thumbs.db
 .DS_Store
+
+# Generated E1 data files (rebuild with the numbered scripts)
+CS74 Work/*/data/
+CS74 Work/*/output/
+CS74 Work/*/logs/
