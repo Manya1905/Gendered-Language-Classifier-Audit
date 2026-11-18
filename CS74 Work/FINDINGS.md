@@ -1,6 +1,6 @@
 # Findings Log
 
-Things found during the audit, sorted by **what they're for**. IDs (F1–F14) stay fixed because other notes refer to them.
+Things found during the audit, sorted by **what they're for**. IDs (F1–F21) stay fixed because other notes refer to them.
 
 | Section | Meaning |
 |---|---|
@@ -55,6 +55,72 @@ Things found during the audit, sorted by **what they're for**. IDs (F1–F14) st
 **F13. Splitting by company removes almost all the sentence overlap.** · *E1*
 - In CS72, about 1/3 of test sentences also appeared in training. With the new company split, only **34 of 2,767 test sentences (1.2%)** still match a training sentence (near-match).
 - **Why it matters:** test versions (a) and (b) will score almost the same, so any drop in E1 comes from the company split itself, not from removing the last duplicates. Say this when presenting the stepwise results.
+
+**F15. About 0.80 of the 0.853 survives (E1 headline).** · *E1, main result*
+- The original model scores **0.853** on its own CS72 test set and **0.798** on the new evaluation set (unseen companies, unseen sentences, labeled the same way). That's a drop of 0.055.
+- The clean models land in the same place: BERT **0.784 ± 0.003**, RoBERTa **0.777 ± 0.003** (3 seeds).
+- **Why it matters:** this answers E1. The CS72 number was inflated by about 0.05 by leakage and test-set model selection. The real ability is about 0.78–0.80 macro-F1.
+- Source: `01_clean_reevaluation/results/summary.md`.
+
+**F16. The original model is slightly ahead of the clean models, but only on feminine.** · *E1*
+- New set, unseen: original 0.798 vs. BERT 0.784 ± 0.003. That's more than the seed noise, so it's likely real.
+- F1 masculine is tied (0.681 / 0.684 / 0.681). The gap is all in feminine (0.761 vs. 0.717 ± 0.004).
+- **Likely reason (a limitation, not a finding about leakage):** the original trained on about 12% more sentences (10,870 vs. 9,715), because the clean split had to set aside 15% for validation. So the clean scores are, if anything, slightly conservative.
+- RoBERTa is no better than BERT here (0.777 vs. 0.784). A stronger pretrained model doesn't help, which is consistent with the limit coming from the data and labels.
+
+**F17. The models beat the keyword rules, but memorizing each word's usual label already gets most of the way.** · *Report under E2*
+- New set, unseen, **flagged-only** (sentences with a list word): BERT 0.762, original 0.775, learned rule 0.632 (clean train) or 0.648 (CS72 train), list rule 0.345.
+- Overall: learned rule 0.685–0.703 vs. models 0.78–0.80.
+- On CS72's own test set the gap is similar: original 0.853 vs. learned rule (CS72 train) 0.769.
+- **Why it matters:** the models add about 0.10–0.13 macro-F1 over pure word lookup on real sentences. That's real but modest. E2's minimal pairs test where the extra comes from.
+
+**F18. Small checks that came out as expected.** · *E1, one sentence each*
+- test_a vs. test_b: identical within 0.001 (BERT 0.818 vs. 0.817). Removing the 34 sentences shared with train changes nothing, as F13 predicted.
+- New set, full vs. unseen: identical within 0.001. The 88 memorized boilerplate sentences give no advantage.
+- All models score lower on the new set than on the clean test set (BERT 0.817 → 0.784). The list rule doesn't drop (0.617 vs. 0.617). Checked in `08_check_set_gap.py` (output: `results/set_gap_check.md`):
+  - **The two sets look alike:** same masculine share (8.0% vs. 8.1%), flagged share (40% vs. 42%), list words per flagged sentence (1.64 vs. 1.60) and sentence length. The new set has *fewer* "both"→masculine labels (33% vs. 37%), so F14 doesn't explain it.
+  - **The drop is masculine precision:** BERT 0.723 → 0.630, while recall barely moves (0.795 → 0.748). False "masculine" calls rise from 24.5 to 35.7 per 1,000 sentences, and 85% of them are sentences Claude labeled **neutral**.
+  - They're spread across leadership-type words ("leadership", "leaders", "analysis", "decisions"), not one word.
+  - **Two explanations remain:** the models over-call leadership-type words as masculine, or Claude labeled those sentences neutral more often this time (labels are partly random, F10). Weak hint toward the second: Claude labeled "leader" sentences gendered 57% of the time in CS72 (n=187) vs. 38% in the new set (n=40), and "lead" 51% (n=408) vs. 40% (n=52). But these are different sentences and small numbers, so this doesn't show inconsistency. The E4 self-agreement check (same sentences re-sent) is the real test. *Settling it means reading the false positives (could be added to the E4 session). For the report: "the drop is in masculine precision on leadership-type sentences Claude labeled neutral."*
+
+**F19. The industry ranking doesn't depend on borderline predictions.** · *E5, threshold sweep*
+- CS72 used argmax. Re-counting the original model's masculine sentences as P(masculine) ≥ t, for t = 0.50, 0.55, …, 0.90, the ranking stays **Finance > Tech > Education > Healthcare** at all 9 thresholds. Finance and tech stay above both female-dominated industries every time.
+- All four industries drop together, so the gap between the male-dominated and female-dominated averages stays at about 12 points (12.0 at argmax, 11.7 at 0.90). Finance goes from 77.0% to 71.6%, healthcare from 56.6% to 51.4%.
+- **Why:** most masculine predictions are confident. 85% of them (11,910 of 13,954) have P(masculine) ≥ 0.9.
+- **Why it matters:** the CS72 ranking isn't an artifact of using argmax. Check passed first: argmax reproduces CS72's 77.0 / 67.4 / 63.9 / 56.6 exactly.
+- Source: `05_downstream/results/threshold_sweep.md`.
+
+**F20. Keyword rules alone reproduce the industry ranking, but with a much smaller gap.** · *E5, changing the labeler*
+- The 3 keyword rules from E1 were run on the same 213,779 sentences (10,000 postings) and counted with CS72's metric:
+
+  | Labeler | Finance | Tech | Education | Healthcare | Gap |
+  |---|---|---|---|---|---|
+  | Original BERT (argmax) | 77.0% | 67.4% | 63.9% | 56.6% | 12.0 pts |
+  | List rule | 93.4% | 92.6% | 91.5% | 87.2% | 3.7 pts |
+  | Learned rule (clean train) | 86.2% | 80.3% | 78.7% | 74.3% | 6.7 pts |
+  | Learned rule (CS72 train) | 86.7% | 82.4% | 79.7% | 74.7% | 7.3 pts |
+
+- All three rules give the same ranking as BERT. So the ranking is already in **which list words each industry uses**, without reading context.
+- The rules flag far more postings (the list rule flags 87–93%, partly from prefix over-matching like "leading" and "analyst"). Almost everything is flagged, so the industries look alike and the gap shrinks.
+- **Why it matters:** BERT's contribution to the CS72 result is making the gap bigger (12 vs. 4–7 points), not producing the ranking. Whether that comes from reading context or from a sharper version of the learned rule is the E2/E3 question.
+- Checks passed first: CS72's matcher reproduces E1's list words on all 3,721 new-set sentences, and the rules reproduce E1's saved predictions exactly.
+- Source: `05_downstream/results/baselines_industry.md`; full E5 table in `05_downstream/results/e5_summary.md`.
+
+**F21. The retrained models give the same ranking, but tech vs. education depends on a few big employers.** · *E5, main result*
+- Retrained on the clean split, all 6 models (3 seeds each) give **Finance > Tech > Education > Healthcare**, the same as the original:
+
+  | Labeler | Finance | Tech | Education | Healthcare | Gap |
+  |---|---|---|---|---|---|
+  | Original (CS72) | 77.0% | 67.4% | 63.9% | 56.6% | 12.0 pts |
+  | BERT (clean), 3 seeds | 76.9 ± 2.2% | 66.2 ± 1.9% | 61.8 ± 1.8% | 52.6 ± 0.8% | 14.3 ± 2.2 pts |
+  | RoBERTa (clean), 3 seeds | 80.3 ± 0.6% | 70.8 ± 1.8% | 63.8 ± 3.3% | 55.4 ± 1.5% | 15.9 ± 2.0 pts |
+
+- Seeds move individual industries by 2–4 points but never change the order. The gap is, if anything, slightly bigger without leakage (12.8–18.1 pts across seeds).
+- Bootstrap over postings: the gap's 95% CI excludes 0 for every labeler, and the ranking survives in 92–100% of resamples for every model.
+- Per-sentence masculine rate (not affected by posting length): finance and tech are above education and healthcare for every labeler.
+- **But with one posting per company (3,765 postings), tech and education swap** for 9 of 10 labelers, original included (e.g. original: finance 75.4, education 69.2, tech 67.9, healthcare 59.5). Finance stays first and healthcare stays last for every labeler, and the models' gap stays clearly positive (7–9 pts). The learned rules' gap nearly disappears (1.3–1.6 pts).
+- **Why it matters:** the claim "male-dominated industries use more masculine language" holds no matter which model labels the sentences, but the strict ordering "tech > education" partly comes from a few employers with many postings (see F7, F6). Safer claim for the report: finance highest, healthcare lowest, tech ≈ education.
+- *Caveat: the bootstrap resamples postings, not companies, so its CIs are probably too narrow. Postings from the same company aren't independent, which is what the one-per-company check shows.*
 
 **F14. Folding "both" into masculine makes some feminine words look masculine in the training data.** · *E2/E3, Discussion*
 - "Interpersonal" is on the feminine list, but in the clean training set it appears in 127 flagged sentences: 72 that Claude called "both" (counted as masculine), 47 feminine, 4 masculine. So it sits in masculine-labeled sentences more often than feminine ones, and the learned keyword rule calls it masculine. Found 2026-11-17 while testing `05_evaluate.py`.

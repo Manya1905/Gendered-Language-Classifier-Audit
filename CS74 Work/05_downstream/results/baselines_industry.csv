@@ -1,0 +1,4 @@
+labeler,masculine_sentences,finance,tech,education,healthcare,ranking,holds,male_dom_avg,female_dom_avg,gap
+List rule,38322,93.44,92.6,91.52,87.2,finance > tech > education > healthcare,True,93.02,89.36,3.66
+Learned rule (clean train),20516,86.2,80.28,78.72,74.28,finance > tech > education > healthcare,True,83.24,76.5,6.74
+Learned rule (CS72 train),21964,86.68,82.4,79.72,74.68,finance > tech > education > healthcare,True,84.54,77.2,7.34

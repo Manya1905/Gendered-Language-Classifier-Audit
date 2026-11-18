@@ -1,0 +1,11 @@
+threshold,masculine_sentences,finance,tech,education,healthcare,ranking,holds,male_dom_avg,female_dom_avg,gap
+argmax (CS72),13954,77.04,67.44,63.92,56.56,finance > tech > education > healthcare,True,72.24,60.24,12.0
+0.50,13914,76.96,67.4,63.64,56.4,finance > tech > education > healthcare,True,72.18,60.02,12.16
+0.55,13725,76.56,67.04,63.28,55.92,finance > tech > education > healthcare,True,71.8,59.6,12.2
+0.60,13557,76.16,66.68,63.04,55.64,finance > tech > education > healthcare,True,71.42,59.34,12.08
+0.65,13388,75.64,66.36,62.68,55.28,finance > tech > education > healthcare,True,71.0,58.98,12.02
+0.70,13171,74.88,66.04,62.12,54.76,finance > tech > education > healthcare,True,70.46,58.44,12.02
+0.75,12922,74.36,65.36,61.68,53.84,finance > tech > education > healthcare,True,69.86,57.76,12.1
+0.80,12668,73.8,64.84,61.28,53.24,finance > tech > education > healthcare,True,69.32,57.26,12.06
+0.85,12353,73.12,63.84,60.32,52.2,finance > tech > education > healthcare,True,68.48,56.26,12.22
+0.90,11910,71.64,62.48,59.44,51.36,finance > tech > education > healthcare,True,67.06,55.4,11.66
