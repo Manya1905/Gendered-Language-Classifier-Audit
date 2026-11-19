@@ -1,6 +1,6 @@
 # Findings Log
 
-Things found during the audit, sorted by **what they're for**. IDs (F1–F21) stay fixed because other notes refer to them.
+Things found during the audit, sorted by **what they're for**. IDs (F1–F24) stay fixed because other notes refer to them.
 
 | Section | Meaning |
 |---|---|
@@ -121,6 +121,31 @@ Things found during the audit, sorted by **what they're for**. IDs (F1–F21) st
 - **But with one posting per company (3,765 postings), tech and education swap** for 9 of 10 labelers, original included (e.g. original: finance 75.4, education 69.2, tech 67.9, healthcare 59.5). Finance stays first and healthcare stays last for every labeler, and the models' gap stays clearly positive (7–9 pts). The learned rules' gap nearly disappears (1.3–1.6 pts).
 - **Why it matters:** the claim "male-dominated industries use more masculine language" holds no matter which model labels the sentences, but the strict ordering "tech > education" partly comes from a few employers with many postings (see F7, F6). Safer claim for the report: finance highest, healthcare lowest, tech ≈ education.
 - *Caveat: the bootstrap resamples postings, not companies, so its CIs are probably too narrow. Postings from the same company aren't independent, which is what the one-per-company check shows.*
+
+**F22. When the model calls a sentence gendered, the list words carry about 40% of the decision, though they're only about 7% of the words.** · *E3, main result*
+- Integrated gradients on 99 flagged, unseen new-set sentences (33 per class, half right / half wrong for the original). Keyword share = list words' |score| as % of all words' |score|, toward the model's predicted class.
+
+  | Model | Predicted gendered: keyword share | Predicted neutral: keyword share | List words as % of words |
+  |---|---|---|---|
+  | Original | 41% (n=59) | 16% (n=40) | 6–7% |
+  | BERT (clean, seed 42) | 40% (n=53) | 15% (n=46) | 5–7% |
+  | RoBERTa (clean, seed 42) | 30% (n=56) | 12% (n=30) | 5–7% |
+
+- In neutral calls, the keyword's score toward neutral is *negative* (original −0.77, BERT −1.24): the keyword still pushes toward gendered, and the rest of the sentence outweighs it.
+- Positive-only shares give the same picture (overall 32% vs. 31% absolute for the original).
+- **Why it matters:** the model leans heavily on the list words (about 6× their share of the sentence), but not only on them: about 60% of a gendered call comes from the other words, and context can override a keyword. Clean BERT looks the same as the original, so the reliance isn't caused by leakage; it comes from training on these labels.
+- Source: `03_integrated_gradients/results/e3_summary.md`.
+
+**F23. False "gendered" calls are less keyword-driven than correct ones.** · *E3*
+- Correct masculine calls: keyword share 53% (original) / 49% (BERT). Neutral-labeled sentences the model called gendered: 33% / 27%. Missed masculine/feminine sentences (model said something else): 20–26%.
+- **Why it matters:** the false alarms (the masculine-precision drop in F18) aren't just "saw a list word, said masculine". Other words in those sentences push too. Reading those sentences (E4) is how to tell whether that context is genuinely gendered or a pattern the labels taught (like F14).
+
+**F24. In minimal pairs, context turns a list word's push down but not off, and off-list words get almost no push.** · *E3 + E2*
+- Target = the keyword's own class, for both sentences of a pair. Context pairs = your labels give one sentence the keyword's class and the other neutral.
+- **List words:** the keyword pushes toward its class harder in the gendered use in 10/14 pairs (original) and 14/21 (BERT). But it still pushes strongly in the neutral use: mean score 3.0 vs. 5.0 (original), 2.6 vs. 5.0 (BERT). Example: "competitive" in "competitive culture" vs. "competitive salary".
+- **Off-list words** ("tough", "sweet", "driven"...): keyword score ≈ 0 in both sentences (original −0.55 vs. 0.10, BERT 0.28 vs. 0.26). The model doesn't treat them as gendered in either context.
+- **Why it matters:** the model reads some context, but only around words that are on the list. Words outside the list get no gendered weight even when a person reads them as gendered. This is the vocabulary result at the word level.
+- *Caveat:* the number of usable pairs differs by model (original 24, BERT 33, RoBERTa 14) because of the convergence filter (see E3 methodology). RoBERTa is secondary: only 159 of 212 sentences converged.
 
 **F14. Folding "both" into masculine makes some feminine words look masculine in the training data.** · *E2/E3, Discussion*
 - "Interpersonal" is on the feminine list, but in the clean training set it appears in 127 flagged sentences: 72 that Claude called "both" (counted as masculine), 47 feminine, 4 masculine. So it sits in masculine-labeled sentences more often than feminine ones, and the learned keyword rule calls it masculine. Found 2026-11-17 while testing `05_evaluate.py`.

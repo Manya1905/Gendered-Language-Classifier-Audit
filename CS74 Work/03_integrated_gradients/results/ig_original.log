@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+[original] /dartfs-hpc/rc/home/6/f007b86/cs74/01_clean_reevaluation/original_model | 213 sentences | steps 50
+  25/213  133s
+  50/213  236s
+  75/213  345s
+  100/213  445s
+  125/213  467s
+  150/213  497s
+  175/213  533s
+  200/213  569s
+  213/213  588s
+[original] checks:
+  skipped (> 128 tokens): 0
+  word-by-word tokens == whole-sentence tokens: 213/213
+  prediction == saved E1/E2 prediction: 213/213
+  convergence: rel delta <= 0.05: 181/213 (median 0.0212, max 2.4405; 112 needed 300 steps)
+  sentences with >= 1 keyword located: 213/213
+  wrote results/ig_sentences_original.csv, results/ig_words_original.csv

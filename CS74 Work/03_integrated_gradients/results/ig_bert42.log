@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+[bert42] /dartfs-hpc/rc/home/6/f007b86/cs74/01_clean_reevaluation/output_cpu/seed_42/checkpoint-best | 213 sentences | steps 50
+  25/213  119s
+  50/213  210s
+  75/213  301s
+  100/213  365s
+  125/213  389s
+  150/213  412s
+  175/213  443s
+  200/213  475s
+  213/213  491s
+[bert42] checks:
+  skipped (> 128 tokens): 0
+  word-by-word tokens == whole-sentence tokens: 213/213
+  prediction == saved E1/E2 prediction: 213/213
+  convergence: rel delta <= 0.05: 190/213 (median 0.0148, max 3.6345; 97 needed 300 steps)
+  sentences with >= 1 keyword located: 213/213
+  wrote results/ig_sentences_bert42.csv, results/ig_words_bert42.csv

@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+[roberta42] /dartfs-hpc/rc/home/6/f007b86/cs74/01_clean_reevaluation/output_cpu/roberta-base_seed_42/checkpoint-best | 213 sentences | steps 50
+  25/213  133s
+  50/213  307s
+  75/213  416s
+  100/213  565s
+  125/213  595s
+  150/213  630s
+  175/213  663s
+  200/213  699s
+  213/213  715s
+[roberta42] checks:
+  skipped (> 128 tokens): 1
+  word-by-word tokens == whole-sentence tokens: 212/212
+  prediction == saved E1/E2 prediction: 212/212
+  convergence: rel delta <= 0.05: 129/212 (median 0.0390, max 49.2537; 135 needed 300 steps)
+  sentences with >= 1 keyword located: 212/212
+  wrote results/ig_sentences_roberta42.csv, results/ig_words_roberta42.csv
