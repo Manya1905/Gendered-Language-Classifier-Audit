@@ -1,6 +1,6 @@
 # Findings Log
 
-Things found during the audit, sorted by **what they're for**. IDs (F1–F24) stay fixed because other notes refer to them.
+Things found during the audit, sorted by **what they're for**. IDs (F1–F28) stay fixed because other notes refer to them.
 
 | Section | Meaning |
 |---|---|
@@ -146,6 +146,51 @@ Things found during the audit, sorted by **what they're for**. IDs (F1–F24) st
 - **Off-list words** ("tough", "sweet", "driven"...): keyword score ≈ 0 in both sentences (original −0.55 vs. 0.10, BERT 0.28 vs. 0.26). The model doesn't treat them as gendered in either context.
 - **Why it matters:** the model reads some context, but only around words that are on the list. Words outside the list get no gendered weight even when a person reads them as gendered. This is the vocabulary result at the word level.
 - *Caveat:* the number of usable pairs differs by model (original 24, BERT 33, RoBERTa 14) because of the convergence filter (see E3 methodology). RoBERTa is secondary: only 159 of 212 sentences converged.
+
+**F25. Claude and I agree on only about half the sentences, and almost every disagreement is Claude calling a sentence gendered that I called neutral.** · *E4, main result*
+- Blind labels (me, one labeler) on 99 flagged, unseen new-set sentences, 33 per Claude label, using the same definitions Claude was given. "both" counted as masculine.
+- Agreement **51.5%**, Cohen's kappa **0.27** ("fair"). Re-weighted to the natural mix of Claude labels among flagged sentences (62% neutral), agreement is about **71%**.
+
+  | Claude said | I agreed | I said neutral |
+  |---|---|---|
+  | neutral (33) | 97% | 97% |
+  | masculine (33) | 24% | 76% |
+  | feminine (33) | 33% | 67% |
+
+- It goes one way: when I called a sentence gendered (20), Claude gave the same label 95% of the time. Of all 50 disagreements in the 119 sentences, 47 are Claude gendered / me neutral.
+- **Why it matters:** Claude isn't labeling randomly; it has a much lower bar for "gendered" than I do. I called 20% of the core sentences gendered, Claude 67%. Every model score in E1–E3 is measured against Claude's bar.
+- *Caveats:* one human labeler, so this could be my bar being strict rather than Claude's being loose. The prompt's definition is broad (any description of culture or work style counts), and I applied it more narrowly. The 33/33/33 sample isn't the natural class mix, so kappa doesn't describe agreement on real data. Other labelers would settle whose bar is unusual (`labeling/blank_labeling_sheet_for_others.xlsx`).
+- Source: `04_label_audit/results/e4_summary.md`.
+
+**F26. Against my labels, every model does worse than just saying "neutral" every time.** · *E4*
+- Same 99 sentences:
+
+  | Labeler | Accuracy vs. Claude | Accuracy vs. me | % called gendered |
+  |---|---|---|---|
+  | Original (CS72) | 0.828 | 0.475 | 63% |
+  | BERT (clean), 3 seeds | 0.808 | 0.485 | 62% |
+  | RoBERTa (clean), 3 seeds | 0.818 | 0.441 | 66% |
+  | Learned rule (clean / CS72 train) | 0.778 / 0.768 | 0.444 / 0.434 | 69% / 71% |
+  | List rule | 0.646 | 0.202 | 100% |
+  | Claude | — | 0.515 | 67% |
+  | Always "neutral" | 0.333 | 0.798 | 0% |
+
+- The models reproduce Claude closely (0.81–0.83) and inherit its bar: they call about as many sentences gendered as Claude does. Against my labels they're no better than Claude itself (0.44–0.49 vs. 0.52).
+- The order is the same on both keys: models > learned rule > list rule.
+- **Why it matters:** the models learned *Claude's* definition of gendered language. How well that matches a person depends on whose reading you trust, and with my labels the gap is large. This is the label-validity caveat for every E1–E3 number.
+- *Caveat:* "always neutral" wins here partly because of my label mix. Macro-F1 against my labels (0.41–0.44) is noisy because I have only 8 masculine and 12 feminine sentences.
+
+**F27. The models' false "masculine" calls on the new set are mostly the models over-calling, not Claude under-calling.** · *E4, resolves F18*
+- 20 sentences Claude labeled neutral that BERT (clean) called masculine in at least 2 of 3 seeds, mixed blind into the sheet. I labeled **18 neutral, 2 masculine**.
+- **Why it matters:** F18 left two explanations for the drop in masculine precision on the new set. My labels side with Claude: the models over-call masculine on these sentences. Together with F23 (these calls are less keyword-driven), the models pick up something besides the list word that neither Claude nor I read as masculine.
+- *Caveat:* 20 sentences, one labeler.
+
+**F28. Some list words are gendered almost automatically for the models, less often for Claude, and rarely for me.** · *E4, ties to F14*
+- "analytical" (all 34 unseen new-set sentences that contain it): models call **31/34** masculine, Claude **24/34**, keyword rules **34/34**. Of the 8 on my sheet, I called **1** masculine.
+- "interpersonal" (8 on the sheet): I called **0** gendered. Claude said "both" for 5 (counted as masculine) and feminine for 3. The original model says **masculine for 6**. This is F14 in action: "both" → masculine taught the model that "interpersonal" is masculine.
+- "support" (18): Claude gendered 13, me 2. "committed" (10): Claude 9, me 1.
+- **Why it matters:** there's a chain of amplification. Claude reads some list words as gendered more often than I do, and the models then make those words even more automatic than Claude did. That matches F22 (list words carry about 40% of a gendered call).
+- (Started from my labeling note: "analytical comes up A LOT.")
 
 **F14. Folding "both" into masculine makes some feminine words look masculine in the training data.** · *E2/E3, Discussion*
 - "Interpersonal" is on the feminine list, but in the clean training set it appears in 127 flagged sentences: 72 that Claude called "both" (counted as masculine), 47 feminine, 4 masculine. So it sits in masculine-labeled sentences more often than feminine ones, and the learned keyword rule calls it masculine. Found 2026-11-17 while testing `05_evaluate.py`.
