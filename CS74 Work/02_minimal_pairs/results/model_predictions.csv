@@ -1,0 +1,799 @@
+pair_id,sentence_text,model,pred,prob_neutral,prob_masculine,prob_feminine
+1,We have a competitive salary.,Original,neutral,0.94936585,0.049328543,0.001305528
+1,We have a competitive culture.,Original,masculine,0.0043204464,0.9949431,0.0007364278
+2,An analytical mindset is required.,Original,masculine,0.0016499554,0.997264,0.0010860516
+2,Experience with analytical instruments is required.,Original,masculine,0.019680886,0.97979593,0.00052318635
+3,Intellectual property knowledge is a plus.,Original,neutral,0.9983681,0.00063295424,0.0009990428
+3,Intellectual curiosity is a plus.,Original,neutral,0.943115,0.05320757,0.0036774087
+4,You will work in an autonomous style.,Original,masculine,0.0019759277,0.99710053,0.0009236128
+4,You will work on autonomous systems.,Original,neutral,0.8209171,0.17517844,0.0039044668
+5,This role is for an independent contractor.,Original,neutral,0.99865806,0.0006167625,0.0007251612
+5,This role is for an independent thinker.,Original,masculine,0.002633499,0.9965558,0.000810652
+6,We seek a dominant personality.,Original,masculine,0.0040574665,0.99498713,0.0009554549
+6,We seek a dominant market position.,Original,neutral,0.9674788,0.031410262,0.0011110132
+7,We value aggressive pricing.,Original,neutral,0.9597203,0.039123982,0.00115576
+7,We value aggressive people.,Original,masculine,0.019579928,0.9792509,0.001169147
+8,We have an ambitious team.,Original,masculine,0.0017917649,0.9972784,0.00092990475
+8,We have an ambitious roadmap.,Original,masculine,0.0021946263,0.99698824,0.0008172461
+9,An active security clearance is required.,Original,neutral,0.9986091,0.0006455598,0.00074529124
+9,An active personality is required.,Original,masculine,0.0013983174,0.99685234,0.0017494076
+10,You must uphold your principles.,Original,neutral,0.9957337,0.002198481,0.002067899
+10,You must uphold accounting principles.,Original,neutral,0.9981305,0.0011353873,0.0007341998
+11,Candidates must complete a coding challenge.,Original,neutral,0.9766312,0.022245497,0.0011233003
+11,Candidates must enjoy a challenge.,Original,masculine,0.0052350345,0.9942009,0.00056397816
+12,You will take the lead.,Original,masculine,0.18575628,0.81249917,0.0017444987
+12,You will handle lead generation.,Original,neutral,0.99071664,0.008038542,0.0012448514
+13,Athletic facilities are available.,Original,neutral,0.99779403,0.0010286439,0.0011773576
+13,Athletic candidates are preferred.,Original,neutral,0.9980737,0.000991006,0.0009353452
+14,Our culture reflects internal competition.,Original,masculine,0.11788169,0.8805407,0.0015775244
+14,Our pricing reflects market competition.,Original,neutral,0.997472,0.0018941404,0.00063389837
+15,You will maintain the file hierarchy.,Original,neutral,0.9985689,0.0005538393,0.00087723293
+15,You will respect the hierarchy.,Original,neutral,0.99777824,0.0008874401,0.0013342869
+16,You will voice your opinion.,Original,neutral,0.99759644,0.0014811262,0.0009223135
+16,You will draft a legal opinion.,Original,neutral,0.9985954,0.00075793423,0.0006466114
+17,The data must persist through restarts.,Original,neutral,0.9986393,0.0005894295,0.0007713468
+17,The candidate must persist through setbacks.,Original,neutral,0.99848443,0.0007185694,0.0007970536
+18,Our team provides moral support.,Original,feminine,0.002419235,0.00082333636,0.99675745
+18,Our team provides technical support.,Original,neutral,0.9976954,0.00044163683,0.0018629539
+19,You will work in supportive housing.,Original,neutral,0.94004464,0.0010897743,0.058865517
+19,You will work in a supportive culture.,Original,feminine,0.0028676153,0.0007575538,0.9963748
+20,Committed staff are essential.,Original,neutral,0.982525,0.000887421,0.01658756
+20,Committed funds are essential.,Original,neutral,0.998453,0.00048341372,0.001063638
+21,You will connect each device quickly.,Original,neutral,0.99842787,0.0004769992,0.0010951188
+21,You will connect with each person quickly.,Original,feminine,0.01529664,0.0005023339,0.984201
+22,We hire dependable people.,Original,feminine,0.006205884,0.0004255218,0.99336857
+22,We build dependable products.,Original,feminine,0.0037580102,0.00053712144,0.9957048
+23,Our systems are reliable and efficient.,Original,neutral,0.8137194,0.0015964118,0.18468426
+23,Our staff are reliable and efficient.,Original,feminine,0.008981558,0.0010294348,0.9899889
+24,You will protect each client's trust.,Original,feminine,0.34782115,0.0013301321,0.6508487
+24,You will protect each client's trust account.,Original,neutral,0.9887893,0.0006169604,0.010593743
+25,Loyalty program experience is a plus.,Original,neutral,0.99798954,0.0008940508,0.0011164556
+25,Loyalty to your coworkers is a plus.,Original,neutral,0.6307664,0.0020872639,0.3671463
+26,We prefer quiet personalities.,Original,neutral,0.9945234,0.0019846922,0.0034919893
+26,We offer quiet workspaces.,Original,neutral,0.9982887,0.0007137407,0.0009975601
+27,You will have a pleasant office.,Original,neutral,0.99543566,0.0012241253,0.0033401984
+27,You will have a pleasant attitude.,Original,feminine,0.37653893,0.0049501583,0.61851084
+28,This role needs a gentle manner.,Original,feminine,0.047166545,0.0015982316,0.95123523
+28,This role has a gentle learning curve.,Original,neutral,0.99832445,0.00066548574,0.0010099974
+29,You will handle sensitive information.,Original,neutral,0.95103854,0.0008051439,0.048156325
+29,You will be sensitive to others.,Original,feminine,0.0039686277,0.00040150256,0.9956299
+30,You will work in a cooperative way.,Original,feminine,0.0034079938,0.00067142106,0.99592054
+30,You will work for an electric cooperative.,Original,neutral,0.99851054,0.000570178,0.0009192921
+31,Experience with tender submissions is required.,Original,neutral,0.99863917,0.0006930224,0.0006678862
+31,A tender manner is required.,Original,neutral,0.99816555,0.0006780033,0.0011564234
+33,An understanding of SQL is required.,Original,neutral,0.99840766,0.00074639014,0.00084599515
+33,An understanding nature is required.,Original,feminine,0.043124888,0.008885895,0.9479892
+34,You will work with a warm demeanor.,Original,feminine,0.004379845,0.0008375467,0.9947826
+34,You will work in warm conditions.,Original,neutral,0.9983063,0.00056353945,0.0011302667
+35,You will handle every kind of client request.,Original,neutral,0.9986332,0.00055890623,0.0008078332
+35,You will be kind to every client.,Original,feminine,0.0065988656,0.00065336894,0.9927477
+36,Experience showing empathy is a plus.,Original,feminine,0.0033133752,0.00050925213,0.9961773
+36,Experience with empathy mapping is a plus.,Original,feminine,0.0040420047,0.0004967372,0.9954613
+37,Experience with email nurturing is required.,Original,feminine,0.0036851084,0.00060702866,0.99570787
+37,A nurturing nature is required.,Original,feminine,0.0018297051,0.0010445409,0.9971258
+38,We pull together as one team.,Original,feminine,0.0039347224,0.0007423002,0.995323
+38,We pull together the monthly reports.,Original,neutral,0.9905805,0.0040641786,0.0053553847
+39,Strong interpersonal skills are required.,Original,feminine,0.0016089311,0.0010160895,0.997375
+39,Strong analytical and interpersonal skills are required.,Original,masculine,0.0012233917,0.996912,0.0018645888
+40,A driven personality is required.,Original,masculine,0.031058121,0.9650746,0.003867253
+40,Experience with driven piles is required.,Original,neutral,0.9983883,0.00082356035,0.00078809226
+41,You must work with tough materials.,Original,neutral,0.9982735,0.000831977,0.00089456275
+41,You must be tough under pressure.,Original,neutral,0.99763036,0.0009945132,0.0013751249
+42,Real grit is required.,Original,neutral,0.9985454,0.0007806431,0.00067393295
+42,Experience with grit blasting is required.,Original,neutral,0.9985776,0.0007771925,0.000645236
+43,You will serve hungry guests.,Original,neutral,0.99811244,0.000729875,0.0011577351
+43,You will be hungry to win.,Original,neutral,0.99773127,0.00066049164,0.0016082813
+44,A patient demeanor is required.,Original,neutral,0.9834293,0.0034198877,0.013150868
+44,Patient intake experience is required.,Original,neutral,0.9986449,0.0006583059,0.0006967344
+45,You will find the pricing sweet spot.,Original,neutral,0.99851745,0.0006920595,0.00079054676
+45,You will bring a sweet personality.,Original,neutral,0.94705105,0.0047508013,0.04819815
+46,A graceful manner is required.,Original,neutral,0.9978138,0.0011603478,0.001025857
+46,Experience with graceful degradation is required.,Original,neutral,0.99854326,0.00076377986,0.00069299806
+47,Experience with soft launches is a plus.,Original,neutral,0.9984113,0.00058776664,0.0010009514
+47,A soft demeanor is a plus.,Original,feminine,0.028143225,0.0020655568,0.96979123
+48,You will use a bold approach.,Original,neutral,0.99832755,0.00097036967,0.0007020317
+48,You will use a bold font.,Original,neutral,0.9985929,0.00054253754,0.0008644973
+49,You will assess risk daily.,Original,neutral,0.9986198,0.00069220306,0.0006879044
+49,You will embrace risk daily.,Original,neutral,0.99790823,0.0006690189,0.0014227848
+50,We hire dynamic people.,Original,neutral,0.99696654,0.0018852935,0.0011481926
+50,We build dynamic web pages.,Original,neutral,0.9983594,0.00068277575,0.00095786067
+51,We value strong encryption.,Original,neutral,0.99855953,0.0005684099,0.0008720195
+51,We value strong personalities.,Original,neutral,0.9888649,0.007890936,0.003244208
+52,You will need a delicate touch.,Original,neutral,0.9875864,0.00075227855,0.011661323
+52,You will handle delicate instruments.,Original,neutral,0.998381,0.00051415013,0.001104804
+53,We have a welcoming lobby.,Original,neutral,0.9966438,0.0006236786,0.0027326012
+53,We have a welcoming team.,Original,neutral,0.99593437,0.0005362665,0.003529323
+54,We value helpful people.,Original,neutral,0.978148,0.0008737481,0.02097831
+54,We value helpful documentation.,Original,neutral,0.99832004,0.000600844,0.0010790125
+55,We seek a supportive colleague.,Original,feminine,0.0036906872,0.0011138194,0.99519545
+55,We seek a supportive and decisive colleague.,Original,masculine,0.0014605717,0.99550015,0.0030391586
+56,Candidates should be dependable and ambitious.,Original,masculine,0.0013899507,0.9966786,0.0019314346
+56,Candidates should be dependable.,Original,feminine,0.004026402,0.0007981469,0.9951755
+57,A cooperative attitude is essential.,Original,feminine,0.001840963,0.000980541,0.99717855
+57,A cooperative and confident attitude is essential.,Original,masculine,0.0013165576,0.99631846,0.0023649724
+58,We need a compassionate and independent team member.,Original,masculine,0.0014423229,0.9925332,0.0060244114
+58,We need a compassionate team member.,Original,feminine,0.002249401,0.000752661,0.99699795
+1,We have a competitive salary.,BERT 42,neutral,0.9990909,0.00046085325,0.00044830065
+1,We have a competitive culture.,BERT 42,masculine,0.016267063,0.9821739,0.0015589425
+2,An analytical mindset is required.,BERT 42,masculine,0.0022037257,0.99686664,0.00092960853
+2,Experience with analytical instruments is required.,BERT 42,masculine,0.08998079,0.90774757,0.002271627
+3,Intellectual property knowledge is a plus.,BERT 42,neutral,0.9990785,0.00029926296,0.00062212726
+3,Intellectual curiosity is a plus.,BERT 42,neutral,0.98983896,0.008776439,0.0013846434
+4,You will work in an autonomous style.,BERT 42,masculine,0.22044262,0.77540505,0.004152269
+4,You will work on autonomous systems.,BERT 42,neutral,0.9976489,0.0016996679,0.000651516
+5,This role is for an independent contractor.,BERT 42,neutral,0.9989525,0.00053536304,0.0005120094
+5,This role is for an independent thinker.,BERT 42,masculine,0.0026869283,0.9964778,0.0008353509
+6,We seek a dominant personality.,BERT 42,masculine,0.037295703,0.9603835,0.0023208011
+6,We seek a dominant market position.,BERT 42,neutral,0.6886057,0.30886844,0.0025258714
+7,We value aggressive pricing.,BERT 42,neutral,0.991565,0.0076393057,0.00079580507
+7,We value aggressive people.,BERT 42,masculine,0.29783097,0.6955522,0.006616851
+8,We have an ambitious team.,BERT 42,masculine,0.0023958003,0.9967591,0.00084501
+8,We have an ambitious roadmap.,BERT 42,masculine,0.004945457,0.99428743,0.0007670902
+9,An active security clearance is required.,BERT 42,neutral,0.9990345,0.0004021224,0.0005633464
+9,An active personality is required.,BERT 42,masculine,0.03760062,0.95982474,0.0025746732
+10,You must uphold your principles.,BERT 42,neutral,0.87842596,0.01514732,0.10642668
+10,You must uphold accounting principles.,BERT 42,neutral,0.99492955,0.0026817713,0.00238876
+11,Candidates must complete a coding challenge.,BERT 42,neutral,0.9672143,0.031399995,0.0013857221
+11,Candidates must enjoy a challenge.,BERT 42,masculine,0.02880538,0.9701591,0.0010354117
+12,You will take the lead.,BERT 42,neutral,0.8062763,0.18118063,0.012543006
+12,You will handle lead generation.,BERT 42,neutral,0.9961867,0.0032123872,0.0006009378
+13,Athletic facilities are available.,BERT 42,neutral,0.9975013,0.0015630882,0.0009355535
+13,Athletic candidates are preferred.,BERT 42,neutral,0.9990689,0.0003931258,0.00053791614
+14,Our culture reflects internal competition.,BERT 42,neutral,0.8695936,0.12742847,0.0029777985
+14,Our pricing reflects market competition.,BERT 42,neutral,0.9986375,0.00089180656,0.00047069517
+15,You will maintain the file hierarchy.,BERT 42,neutral,0.9985845,0.00064259005,0.0007729112
+15,You will respect the hierarchy.,BERT 42,neutral,0.9608955,0.021561742,0.017542776
+16,You will voice your opinion.,BERT 42,neutral,0.9932707,0.0047898456,0.0019395406
+16,You will draft a legal opinion.,BERT 42,neutral,0.99888784,0.0006181659,0.00049399625
+17,The data must persist through restarts.,BERT 42,neutral,0.999154,0.00026912655,0.00057687203
+17,The candidate must persist through setbacks.,BERT 42,neutral,0.9991146,0.00030685915,0.0005786295
+18,Our team provides moral support.,BERT 42,feminine,0.00995946,0.0011774891,0.988863
+18,Our team provides technical support.,BERT 42,neutral,0.99687433,0.000282665,0.00284291
+19,You will work in supportive housing.,BERT 42,neutral,0.9962172,0.00028131943,0.0035015293
+19,You will work in a supportive culture.,BERT 42,feminine,0.0074639176,0.0010340282,0.99150205
+20,Committed staff are essential.,BERT 42,neutral,0.99813,0.0004924258,0.0013775184
+20,Committed funds are essential.,BERT 42,neutral,0.9990299,0.00024399077,0.0007260659
+21,You will connect each device quickly.,BERT 42,neutral,0.9987674,0.00028297232,0.0009496807
+21,You will connect with each person quickly.,BERT 42,feminine,0.011670679,0.0011264081,0.98720294
+22,We hire dependable people.,BERT 42,neutral,0.62563473,0.0017843737,0.37258092
+22,We build dependable products.,BERT 42,feminine,0.1066695,0.0016878692,0.89164263
+23,Our systems are reliable and efficient.,BERT 42,neutral,0.99661154,0.00039521197,0.0029931865
+23,Our staff are reliable and efficient.,BERT 42,neutral,0.7603666,0.0022663989,0.23736691
+24,You will protect each client's trust.,BERT 42,feminine,0.012802959,0.0011623612,0.98603463
+24,You will protect each client's trust account.,BERT 42,feminine,0.03450761,0.0012882667,0.96420413
+25,Loyalty program experience is a plus.,BERT 42,neutral,0.9989002,0.00031574417,0.0007839914
+25,Loyalty to your coworkers is a plus.,BERT 42,neutral,0.9359876,0.0021815838,0.061830815
+26,We prefer quiet personalities.,BERT 42,neutral,0.99667645,0.001291477,0.0020320325
+26,We offer quiet workspaces.,BERT 42,neutral,0.9990778,0.0003873069,0.0005348185
+27,You will have a pleasant office.,BERT 42,neutral,0.98309994,0.0035535535,0.0133464495
+27,You will have a pleasant attitude.,BERT 42,neutral,0.65689576,0.017923173,0.3251811
+28,This role needs a gentle manner.,BERT 42,neutral,0.78186315,0.0053163874,0.2128204
+28,This role has a gentle learning curve.,BERT 42,neutral,0.99886644,0.00039206864,0.0007414981
+29,You will handle sensitive information.,BERT 42,neutral,0.99603266,0.00031110036,0.0036562057
+29,You will be sensitive to others.,BERT 42,feminine,0.03966075,0.0012965135,0.9590428
+30,You will work in a cooperative way.,BERT 42,feminine,0.012147055,0.0013919756,0.98646104
+30,You will work for an electric cooperative.,BERT 42,neutral,0.9991873,0.0003387461,0.00047393815
+31,Experience with tender submissions is required.,BERT 42,neutral,0.9989718,0.00047335876,0.0005548118
+31,A tender manner is required.,BERT 42,neutral,0.9988255,0.00044704307,0.000727494
+33,An understanding of SQL is required.,BERT 42,neutral,0.9982577,0.0007220669,0.0010202493
+33,An understanding nature is required.,BERT 42,feminine,0.011149745,0.002348447,0.9865019
+34,You will work with a warm demeanor.,BERT 42,feminine,0.01642493,0.0014442839,0.9821308
+34,You will work in warm conditions.,BERT 42,neutral,0.9981091,0.0008097565,0.0010811462
+35,You will handle every kind of client request.,BERT 42,neutral,0.99911016,0.0002956225,0.00059417845
+35,You will be kind to every client.,BERT 42,feminine,0.009986402,0.0011649965,0.98884857
+36,Experience showing empathy is a plus.,BERT 42,feminine,0.008319052,0.0013352642,0.99034566
+36,Experience with empathy mapping is a plus.,BERT 42,feminine,0.008846005,0.0011750965,0.9899789
+37,Experience with email nurturing is required.,BERT 42,feminine,0.009483772,0.0011264106,0.98938984
+37,A nurturing nature is required.,BERT 42,feminine,0.006286321,0.0016039256,0.9921097
+38,We pull together as one team.,BERT 42,feminine,0.3343131,0.038997684,0.6266892
+38,We pull together the monthly reports.,BERT 42,neutral,0.99350536,0.00391607,0.0025785188
+39,Strong interpersonal skills are required.,BERT 42,feminine,0.0065818774,0.0013137938,0.9921043
+39,Strong analytical and interpersonal skills are required.,BERT 42,masculine,0.0015024961,0.9954817,0.0030157508
+40,A driven personality is required.,BERT 42,neutral,0.9987373,0.0005312624,0.00073144084
+40,Experience with driven piles is required.,BERT 42,neutral,0.9986279,0.0007318192,0.0006404003
+41,You must work with tough materials.,BERT 42,neutral,0.9980013,0.0010014874,0.000997214
+41,You must be tough under pressure.,BERT 42,neutral,0.99655735,0.0016298306,0.0018129179
+42,Real grit is required.,BERT 42,neutral,0.9983199,0.0008300467,0.0008500002
+42,Experience with grit blasting is required.,BERT 42,neutral,0.9986859,0.0007097388,0.00060428045
+43,You will serve hungry guests.,BERT 42,neutral,0.9980411,0.000775145,0.0011837926
+43,You will be hungry to win.,BERT 42,neutral,0.9977634,0.0012784908,0.0009580268
+44,A patient demeanor is required.,BERT 42,neutral,0.998609,0.0005135033,0.0008774991
+44,Patient intake experience is required.,BERT 42,neutral,0.99902356,0.00032415314,0.0006522277
+45,You will find the pricing sweet spot.,BERT 42,neutral,0.9989956,0.00039020006,0.0006140975
+45,You will bring a sweet personality.,BERT 42,neutral,0.99187577,0.001328428,0.00679581
+46,A graceful manner is required.,BERT 42,neutral,0.9986027,0.000645216,0.0007521407
+46,Experience with graceful degradation is required.,BERT 42,neutral,0.99897313,0.00052490004,0.0005019032
+47,Experience with soft launches is a plus.,BERT 42,neutral,0.9988475,0.00031270072,0.00083980535
+47,A soft demeanor is a plus.,BERT 42,neutral,0.99574775,0.00046711476,0.0037852086
+48,You will use a bold approach.,BERT 42,neutral,0.99669373,0.0026754173,0.0006309386
+48,You will use a bold font.,BERT 42,neutral,0.99885094,0.00040360706,0.00074540667
+49,You will assess risk daily.,BERT 42,neutral,0.9984694,0.0010439517,0.00048659998
+49,You will embrace risk daily.,BERT 42,neutral,0.99744874,0.0011690585,0.0013821577
+50,We hire dynamic people.,BERT 42,neutral,0.9989812,0.00048695388,0.00053181243
+50,We build dynamic web pages.,BERT 42,neutral,0.9987931,0.00032895154,0.0008778706
+51,We value strong encryption.,BERT 42,neutral,0.9989544,0.000467227,0.000578443
+51,We value strong personalities.,BERT 42,neutral,0.99543685,0.0028581808,0.0017049725
+52,You will need a delicate touch.,BERT 42,neutral,0.9959919,0.0013612016,0.0026468397
+52,You will handle delicate instruments.,BERT 42,neutral,0.9986541,0.0004614894,0.0008843919
+53,We have a welcoming lobby.,BERT 42,neutral,0.9986325,0.00041214158,0.00095536164
+53,We have a welcoming team.,BERT 42,neutral,0.9982529,0.00050744653,0.001239661
+54,We value helpful people.,BERT 42,neutral,0.9969676,0.0004254537,0.0026069072
+54,We value helpful documentation.,BERT 42,neutral,0.99891627,0.00046224182,0.0006214618
+55,We seek a supportive colleague.,BERT 42,feminine,0.0065619596,0.001679011,0.991759
+55,We seek a supportive and decisive colleague.,BERT 42,masculine,0.0023383743,0.9951573,0.0025042682
+56,Candidates should be dependable and ambitious.,BERT 42,masculine,0.0015254318,0.9973724,0.0011021689
+56,Candidates should be dependable.,BERT 42,feminine,0.056062426,0.001377359,0.94256026
+57,A cooperative attitude is essential.,BERT 42,feminine,0.005778516,0.0014229286,0.99279857
+57,A cooperative and confident attitude is essential.,BERT 42,masculine,0.0030201522,0.96603495,0.030944824
+58,We need a compassionate and independent team member.,BERT 42,masculine,0.0019443118,0.9942538,0.0038018727
+58,We need a compassionate team member.,BERT 42,feminine,0.005682373,0.0020391408,0.99227846
+1,We have a competitive salary.,BERT 43,neutral,0.99852777,0.0010067614,0.00046537438
+1,We have a competitive culture.,BERT 43,masculine,0.10787367,0.890055,0.0020713748
+2,An analytical mindset is required.,BERT 43,masculine,0.0028127718,0.9962214,0.0009657242
+2,Experience with analytical instruments is required.,BERT 43,neutral,0.86550814,0.13319318,0.0012987283
+3,Intellectual property knowledge is a plus.,BERT 43,neutral,0.99881136,0.0006601302,0.00052854704
+3,Intellectual curiosity is a plus.,BERT 43,neutral,0.9552404,0.043102607,0.0016570265
+4,You will work in an autonomous style.,BERT 43,neutral,0.9955865,0.0038268855,0.00058658066
+4,You will work on autonomous systems.,BERT 43,neutral,0.9971814,0.0022490877,0.0005695263
+5,This role is for an independent contractor.,BERT 43,neutral,0.9986601,0.00086495874,0.0004748713
+5,This role is for an independent thinker.,BERT 43,masculine,0.0038163934,0.9953921,0.000791522
+6,We seek a dominant personality.,BERT 43,masculine,0.003725166,0.9953425,0.00093236053
+6,We seek a dominant market position.,BERT 43,masculine,0.02069304,0.9785225,0.0007844549
+7,We value aggressive pricing.,BERT 43,masculine,0.48757097,0.511018,0.0014111185
+7,We value aggressive people.,BERT 43,masculine,0.008324685,0.99071854,0.0009567605
+8,We have an ambitious team.,BERT 43,masculine,0.0023870943,0.9968767,0.0007361792
+8,We have an ambitious roadmap.,BERT 43,masculine,0.0055508376,0.9938731,0.0005760926
+9,An active security clearance is required.,BERT 43,neutral,0.99879813,0.00063033996,0.0005715196
+9,An active personality is required.,BERT 43,masculine,0.007341835,0.9913795,0.0012787377
+10,You must uphold your principles.,BERT 43,neutral,0.9624302,0.0030617178,0.034508146
+10,You must uphold accounting principles.,BERT 43,neutral,0.99752945,0.0012561606,0.0012143312
+11,Candidates must complete a coding challenge.,BERT 43,neutral,0.993765,0.0055936426,0.00064135157
+11,Candidates must enjoy a challenge.,BERT 43,masculine,0.026957167,0.97229415,0.0007486617
+12,You will take the lead.,BERT 43,neutral,0.6837239,0.31434256,0.001933552
+12,You will handle lead generation.,BERT 43,neutral,0.9980166,0.0015232215,0.00046016456
+13,Athletic facilities are available.,BERT 43,neutral,0.9963685,0.002239153,0.0013923418
+13,Athletic candidates are preferred.,BERT 43,neutral,0.99850607,0.0010344092,0.00045958484
+14,Our culture reflects internal competition.,BERT 43,neutral,0.8110762,0.18743943,0.0014843405
+14,Our pricing reflects market competition.,BERT 43,neutral,0.99849784,0.0010895876,0.00041260078
+15,You will maintain the file hierarchy.,BERT 43,neutral,0.9984901,0.00070597994,0.00080395176
+15,You will respect the hierarchy.,BERT 43,neutral,0.99711347,0.0012264305,0.0016600689
+16,You will voice your opinion.,BERT 43,neutral,0.9984504,0.0006868871,0.00086274743
+16,You will draft a legal opinion.,BERT 43,neutral,0.9986513,0.0007102996,0.000638403
+17,The data must persist through restarts.,BERT 43,neutral,0.9987864,0.000683743,0.00052984443
+17,The candidate must persist through setbacks.,BERT 43,neutral,0.998544,0.0008906348,0.00056539377
+18,Our team provides moral support.,BERT 43,feminine,0.0045320597,0.00059641787,0.9948715
+18,Our team provides technical support.,BERT 43,neutral,0.99766445,0.0005676483,0.0017679293
+19,You will work in supportive housing.,BERT 43,neutral,0.99593157,0.0005801502,0.0034882387
+19,You will work in a supportive culture.,BERT 43,feminine,0.005623073,0.0004900749,0.9938869
+20,Committed staff are essential.,BERT 43,feminine,0.0064613936,0.0014829993,0.9920556
+20,Committed funds are essential.,BERT 43,neutral,0.9987375,0.0005835729,0.0006789264
+21,You will connect each device quickly.,BERT 43,neutral,0.9984774,0.00063025055,0.0008923646
+21,You will connect with each person quickly.,BERT 43,feminine,0.016513065,0.0005341869,0.9829527
+22,We hire dependable people.,BERT 43,neutral,0.89081717,0.0013885461,0.1077942
+22,We build dependable products.,BERT 43,feminine,0.07617883,0.0012347082,0.92258644
+23,Our systems are reliable and efficient.,BERT 43,neutral,0.99628156,0.0010701116,0.0026483645
+23,Our staff are reliable and efficient.,BERT 43,neutral,0.98818994,0.0013867137,0.010423305
+24,You will protect each client's trust.,BERT 43,feminine,0.03175294,0.0007823564,0.96746475
+24,You will protect each client's trust account.,BERT 43,feminine,0.10463777,0.0009984629,0.89436376
+25,Loyalty program experience is a plus.,BERT 43,neutral,0.99859506,0.000744874,0.0006600577
+25,Loyalty to your coworkers is a plus.,BERT 43,neutral,0.99295443,0.0006784016,0.0063671498
+26,We prefer quiet personalities.,BERT 43,neutral,0.9968256,0.0016290081,0.0015454079
+26,We offer quiet workspaces.,BERT 43,neutral,0.99833363,0.0007839463,0.0008824141
+27,You will have a pleasant office.,BERT 43,neutral,0.99037,0.0011896646,0.008440286
+27,You will have a pleasant attitude.,BERT 43,neutral,0.78501165,0.004004859,0.21098344
+28,This role needs a gentle manner.,BERT 43,feminine,0.13492408,0.0028522848,0.8622236
+28,This role has a gentle learning curve.,BERT 43,neutral,0.9984281,0.0007350816,0.00083685573
+29,You will handle sensitive information.,BERT 43,neutral,0.9971052,0.00057368213,0.0023211904
+29,You will be sensitive to others.,BERT 43,feminine,0.042909984,0.0007674237,0.95632255
+30,You will work in a cooperative way.,BERT 43,feminine,0.10181707,0.0013534077,0.89682955
+30,You will work for an electric cooperative.,BERT 43,neutral,0.9987332,0.0007128311,0.0005540103
+31,Experience with tender submissions is required.,BERT 43,neutral,0.9987294,0.0007012234,0.0005693224
+31,A tender manner is required.,BERT 43,neutral,0.9985726,0.00079719926,0.000630176
+33,An understanding of SQL is required.,BERT 43,neutral,0.9986615,0.0006356035,0.0007029031
+33,An understanding nature is required.,BERT 43,feminine,0.10045523,0.0013664936,0.8981783
+34,You will work with a warm demeanor.,BERT 43,feminine,0.086710155,0.00094118045,0.9123487
+34,You will work in warm conditions.,BERT 43,neutral,0.9982266,0.0008554197,0.00091789244
+35,You will handle every kind of client request.,BERT 43,neutral,0.99870515,0.0005811581,0.0007137542
+35,You will be kind to every client.,BERT 43,feminine,0.010546664,0.00054177723,0.9889115
+36,Experience showing empathy is a plus.,BERT 43,feminine,0.0045199194,0.000700412,0.9947797
+36,Experience with empathy mapping is a plus.,BERT 43,feminine,0.005352009,0.00087312015,0.9937749
+37,Experience with email nurturing is required.,BERT 43,feminine,0.0053561684,0.00067835767,0.99396545
+37,A nurturing nature is required.,BERT 43,feminine,0.004341357,0.0008406454,0.99481803
+38,We pull together as one team.,BERT 43,feminine,0.011178781,0.0010068587,0.9878143
+38,We pull together the monthly reports.,BERT 43,neutral,0.93329763,0.010639014,0.056063287
+39,Strong interpersonal skills are required.,BERT 43,feminine,0.004512929,0.00095534377,0.99453175
+39,Strong analytical and interpersonal skills are required.,BERT 43,masculine,0.0019974718,0.99432445,0.0036781128
+40,A driven personality is required.,BERT 43,neutral,0.9983041,0.0012415975,0.00045426076
+40,Experience with driven piles is required.,BERT 43,neutral,0.9986523,0.0008258803,0.0005219216
+41,You must work with tough materials.,BERT 43,neutral,0.9980531,0.0011348191,0.0008121286
+41,You must be tough under pressure.,BERT 43,neutral,0.99758863,0.0012996182,0.0011118233
+42,Real grit is required.,BERT 43,neutral,0.9986766,0.00077964,0.00054373866
+42,Experience with grit blasting is required.,BERT 43,neutral,0.99878067,0.00073065894,0.00048860366
+43,You will serve hungry guests.,BERT 43,neutral,0.9983316,0.0009611153,0.00070727966
+43,You will be hungry to win.,BERT 43,neutral,0.9984207,0.00091399124,0.00066535827
+44,A patient demeanor is required.,BERT 43,neutral,0.99876225,0.0006719439,0.00056582055
+44,Patient intake experience is required.,BERT 43,neutral,0.99885666,0.00061606616,0.0005272298
+45,You will find the pricing sweet spot.,BERT 43,neutral,0.9987141,0.0006770548,0.0006088001
+45,You will bring a sweet personality.,BERT 43,neutral,0.99767274,0.0012552913,0.0010718921
+46,A graceful manner is required.,BERT 43,neutral,0.99855286,0.0008646003,0.00058255426
+46,Experience with graceful degradation is required.,BERT 43,neutral,0.9986563,0.0008180819,0.00052559096
+47,Experience with soft launches is a plus.,BERT 43,neutral,0.99883324,0.000621403,0.0005453272
+47,A soft demeanor is a plus.,BERT 43,neutral,0.9978611,0.00066518196,0.001473685
+48,You will use a bold approach.,BERT 43,neutral,0.9980167,0.0014660145,0.0005173244
+48,You will use a bold font.,BERT 43,neutral,0.99865025,0.0007181605,0.0006315414
+49,You will assess risk daily.,BERT 43,neutral,0.99857986,0.0007531973,0.0006670038
+49,You will embrace risk daily.,BERT 43,neutral,0.99856144,0.0007511198,0.00068745407
+50,We hire dynamic people.,BERT 43,neutral,0.99838734,0.001053731,0.0005589405
+50,We build dynamic web pages.,BERT 43,neutral,0.9984578,0.00082868926,0.00071358355
+51,We value strong encryption.,BERT 43,neutral,0.99846184,0.00095698325,0.0005811584
+51,We value strong personalities.,BERT 43,neutral,0.96510017,0.03301985,0.0018800036
+52,You will need a delicate touch.,BERT 43,neutral,0.99801934,0.00080111885,0.0011794645
+52,You will handle delicate instruments.,BERT 43,neutral,0.9985592,0.00071854645,0.000722328
+53,We have a welcoming lobby.,BERT 43,neutral,0.9974426,0.000808918,0.0017485431
+53,We have a welcoming team.,BERT 43,neutral,0.99740356,0.000847215,0.0017492502
+54,We value helpful people.,BERT 43,neutral,0.99746215,0.0011012338,0.0014366014
+54,We value helpful documentation.,BERT 43,neutral,0.99865603,0.00064911775,0.00069479865
+55,We seek a supportive colleague.,BERT 43,feminine,0.0036039155,0.0011313666,0.99526477
+55,We seek a supportive and decisive colleague.,BERT 43,masculine,0.001982543,0.9969998,0.0010175625
+56,Candidates should be dependable and ambitious.,BERT 43,masculine,0.0021638938,0.997031,0.00080513617
+56,Candidates should be dependable.,BERT 43,neutral,0.94276404,0.0011429719,0.056092933
+57,A cooperative attitude is essential.,BERT 43,feminine,0.0029036445,0.0025690591,0.9945273
+57,A cooperative and confident attitude is essential.,BERT 43,masculine,0.0020258396,0.99432063,0.003653482
+58,We need a compassionate and independent team member.,BERT 43,masculine,0.0017251023,0.9964888,0.0017861016
+58,We need a compassionate team member.,BERT 43,feminine,0.0036515177,0.0008545754,0.9954939
+1,We have a competitive salary.,BERT 44,neutral,0.9988153,0.0008995576,0.00028511425
+1,We have a competitive culture.,BERT 44,masculine,0.013060064,0.98496556,0.0019743291
+2,An analytical mindset is required.,BERT 44,masculine,0.0021663108,0.9970763,0.0007574032
+2,Experience with analytical instruments is required.,BERT 44,masculine,0.008824426,0.9896829,0.0014926936
+3,Intellectual property knowledge is a plus.,BERT 44,neutral,0.99916685,0.0003595726,0.00047363972
+3,Intellectual curiosity is a plus.,BERT 44,neutral,0.9973367,0.0015895612,0.0010737585
+4,You will work in an autonomous style.,BERT 44,masculine,0.03637858,0.9607784,0.002843013
+4,You will work on autonomous systems.,BERT 44,neutral,0.99726546,0.002248801,0.00048581584
+5,This role is for an independent contractor.,BERT 44,neutral,0.9989028,0.0007579821,0.0003392645
+5,This role is for an independent thinker.,BERT 44,masculine,0.003048726,0.99609584,0.00085538294
+6,We seek a dominant personality.,BERT 44,masculine,0.0054505668,0.99324083,0.0013086476
+6,We seek a dominant market position.,BERT 44,masculine,0.025064094,0.97313595,0.0017999754
+7,We value aggressive pricing.,BERT 44,masculine,0.104130045,0.8933141,0.002555902
+7,We value aggressive people.,BERT 44,masculine,0.0047371476,0.99424696,0.0010158649
+8,We have an ambitious team.,BERT 44,masculine,0.0032847095,0.9958176,0.0008977259
+8,We have an ambitious roadmap.,BERT 44,masculine,0.0054363776,0.9935074,0.0010561865
+9,An active security clearance is required.,BERT 44,neutral,0.9992686,0.00036179923,0.00036960686
+9,An active personality is required.,BERT 44,masculine,0.0057240077,0.9928141,0.0014618724
+10,You must uphold your principles.,BERT 44,neutral,0.87886554,0.0039403066,0.11719419
+10,You must uphold accounting principles.,BERT 44,neutral,0.9985337,0.0008012665,0.00066508213
+11,Candidates must complete a coding challenge.,BERT 44,neutral,0.8917725,0.10690967,0.0013177393
+11,Candidates must enjoy a challenge.,BERT 44,masculine,0.005756891,0.99337256,0.0008706024
+12,You will take the lead.,BERT 44,neutral,0.94408363,0.054564122,0.0013521778
+12,You will handle lead generation.,BERT 44,neutral,0.9990332,0.0006049312,0.00036189985
+13,Athletic facilities are available.,BERT 44,neutral,0.99781114,0.0009048895,0.0012840948
+13,Athletic candidates are preferred.,BERT 44,neutral,0.9991061,0.00063771504,0.00025619564
+14,Our culture reflects internal competition.,BERT 44,masculine,0.05259555,0.9458425,0.0015620226
+14,Our pricing reflects market competition.,BERT 44,neutral,0.9986129,0.0011169298,0.00027006937
+15,You will maintain the file hierarchy.,BERT 44,neutral,0.9992071,0.00031694522,0.00047598314
+15,You will respect the hierarchy.,BERT 44,neutral,0.99875224,0.00051795185,0.00072984496
+16,You will voice your opinion.,BERT 44,neutral,0.9985688,0.00078146474,0.0006497417
+16,You will draft a legal opinion.,BERT 44,neutral,0.99927884,0.0004272112,0.00029393748
+17,The data must persist through restarts.,BERT 44,neutral,0.9992668,0.00035693005,0.0003763
+17,The candidate must persist through setbacks.,BERT 44,neutral,0.9992292,0.000414838,0.0003558966
+18,Our team provides moral support.,BERT 44,feminine,0.008352581,0.0008821289,0.99076533
+18,Our team provides technical support.,BERT 44,neutral,0.99759597,0.00036510834,0.0020389392
+19,You will work in supportive housing.,BERT 44,neutral,0.9873705,0.00044854797,0.012180885
+19,You will work in a supportive culture.,BERT 44,feminine,0.0062017213,0.000779211,0.99301904
+20,Committed staff are essential.,BERT 44,feminine,0.009374708,0.0014436517,0.9891817
+20,Committed funds are essential.,BERT 44,neutral,0.9987136,0.00036601708,0.00092047796
+21,You will connect each device quickly.,BERT 44,neutral,0.99876666,0.0003322881,0.0009010124
+21,You will connect with each person quickly.,BERT 44,feminine,0.32696328,0.0015283749,0.6715083
+22,We hire dependable people.,BERT 44,neutral,0.72338694,0.0011942665,0.2754188
+22,We build dependable products.,BERT 44,feminine,0.027965562,0.00094143325,0.971093
+23,Our systems are reliable and efficient.,BERT 44,neutral,0.9945874,0.0004892548,0.004923264
+23,Our staff are reliable and efficient.,BERT 44,neutral,0.6095573,0.0028412,0.38760152
+24,You will protect each client's trust.,BERT 44,feminine,0.017406156,0.0009717252,0.98162216
+24,You will protect each client's trust account.,BERT 44,feminine,0.19955014,0.0012826978,0.79916716
+25,Loyalty program experience is a plus.,BERT 44,neutral,0.99893636,0.00038179004,0.00068191637
+25,Loyalty to your coworkers is a plus.,BERT 44,feminine,0.0719912,0.0023856577,0.9256232
+26,We prefer quiet personalities.,BERT 44,neutral,0.99437535,0.0037233727,0.001901224
+26,We offer quiet workspaces.,BERT 44,neutral,0.9988171,0.00038797208,0.0007950417
+27,You will have a pleasant office.,BERT 44,neutral,0.9958801,0.0009140182,0.003205909
+27,You will have a pleasant attitude.,BERT 44,neutral,0.8817411,0.008492853,0.10976611
+28,This role needs a gentle manner.,BERT 44,feminine,0.007155371,0.0025978705,0.9902468
+28,This role has a gentle learning curve.,BERT 44,neutral,0.9988568,0.0004574774,0.00068576634
+29,You will handle sensitive information.,BERT 44,neutral,0.9974412,0.00031108994,0.0022477885
+29,You will be sensitive to others.,BERT 44,feminine,0.01060996,0.0011956404,0.98819435
+30,You will work in a cooperative way.,BERT 44,feminine,0.009358029,0.0011266024,0.9895154
+30,You will work for an electric cooperative.,BERT 44,neutral,0.9988393,0.00034703757,0.0008135555
+31,Experience with tender submissions is required.,BERT 44,neutral,0.99927884,0.00038393057,0.00033725786
+31,A tender manner is required.,BERT 44,neutral,0.9989838,0.00036956143,0.00064663525
+33,An understanding of SQL is required.,BERT 44,neutral,0.99910456,0.0005000973,0.00039525446
+33,An understanding nature is required.,BERT 44,feminine,0.0065975706,0.0012479036,0.99215454
+34,You will work with a warm demeanor.,BERT 44,feminine,0.009398055,0.0011077707,0.98949414
+34,You will work in warm conditions.,BERT 44,neutral,0.9989472,0.0002997906,0.00075304986
+35,You will handle every kind of client request.,BERT 44,neutral,0.99927276,0.00032254335,0.00040460817
+35,You will be kind to every client.,BERT 44,feminine,0.007074992,0.0011592666,0.9917658
+36,Experience showing empathy is a plus.,BERT 44,feminine,0.0046001566,0.00078234955,0.9946175
+36,Experience with empathy mapping is a plus.,BERT 44,feminine,0.020404873,0.0007844304,0.97881067
+37,Experience with email nurturing is required.,BERT 44,feminine,0.0025934565,0.001116371,0.9962902
+37,A nurturing nature is required.,BERT 44,feminine,0.0023631072,0.0015585617,0.9960783
+38,We pull together as one team.,BERT 44,feminine,0.009133301,0.0033217922,0.98754483
+38,We pull together the monthly reports.,BERT 44,neutral,0.9981439,0.0010927238,0.000763442
+39,Strong interpersonal skills are required.,BERT 44,feminine,0.0029041576,0.0014256589,0.9956702
+39,Strong analytical and interpersonal skills are required.,BERT 44,masculine,0.0014008315,0.99615735,0.0024419057
+40,A driven personality is required.,BERT 44,neutral,0.996357,0.0029907788,0.00065214344
+40,Experience with driven piles is required.,BERT 44,neutral,0.9991055,0.00046142752,0.0004331039
+41,You must work with tough materials.,BERT 44,neutral,0.9979663,0.0007513966,0.0012823681
+41,You must be tough under pressure.,BERT 44,neutral,0.99688464,0.00088034215,0.0022350384
+42,Real grit is required.,BERT 44,neutral,0.999062,0.0004700905,0.00046789757
+42,Experience with grit blasting is required.,BERT 44,neutral,0.9992238,0.0004133917,0.0003628402
+43,You will serve hungry guests.,BERT 44,neutral,0.99904805,0.0004121421,0.0005397306
+43,You will be hungry to win.,BERT 44,neutral,0.9974158,0.0014411226,0.0011431366
+44,A patient demeanor is required.,BERT 44,neutral,0.99895823,0.00062770594,0.00041411823
+44,Patient intake experience is required.,BERT 44,neutral,0.999303,0.00038766954,0.00030940416
+45,You will find the pricing sweet spot.,BERT 44,neutral,0.999241,0.00039472716,0.00036430114
+45,You will bring a sweet personality.,BERT 44,neutral,0.9934735,0.001000967,0.0055255117
+46,A graceful manner is required.,BERT 44,neutral,0.9983707,0.00096078083,0.0006685561
+46,Experience with graceful degradation is required.,BERT 44,neutral,0.999044,0.00050487637,0.00045113548
+47,Experience with soft launches is a plus.,BERT 44,neutral,0.9989994,0.00035724364,0.00064336916
+47,A soft demeanor is a plus.,BERT 44,feminine,0.06917533,0.0016859036,0.9291388
+48,You will use a bold approach.,BERT 44,neutral,0.99687284,0.0026076725,0.0005195996
+48,You will use a bold font.,BERT 44,neutral,0.999175,0.00038956513,0.00043530433
+49,You will assess risk daily.,BERT 44,neutral,0.99927,0.00034771452,0.00038229875
+49,You will embrace risk daily.,BERT 44,neutral,0.99803704,0.0007952606,0.0011677851
+50,We hire dynamic people.,BERT 44,neutral,0.9991696,0.00039740503,0.00043312836
+50,We build dynamic web pages.,BERT 44,neutral,0.99913365,0.00035031134,0.00051613053
+51,We value strong encryption.,BERT 44,neutral,0.99893683,0.00048315813,0.0005800464
+51,We value strong personalities.,BERT 44,neutral,0.997148,0.0021004295,0.00075158244
+52,You will need a delicate touch.,BERT 44,neutral,0.9887933,0.0016066798,0.009599932
+52,You will handle delicate instruments.,BERT 44,neutral,0.9990226,0.00032378087,0.0006536257
+53,We have a welcoming lobby.,BERT 44,neutral,0.99776566,0.0007330141,0.001501343
+53,We have a welcoming team.,BERT 44,neutral,0.9966633,0.0010293903,0.0023073547
+54,We value helpful people.,BERT 44,neutral,0.99370956,0.00054511183,0.005745325
+54,We value helpful documentation.,BERT 44,neutral,0.9991659,0.00031074288,0.0005233912
+55,We seek a supportive colleague.,BERT 44,feminine,0.0028048533,0.0010597683,0.99613535
+55,We seek a supportive and decisive colleague.,BERT 44,masculine,0.0024172876,0.996693,0.00088972045
+56,Candidates should be dependable and ambitious.,BERT 44,masculine,0.0017819355,0.9975122,0.0007058484
+56,Candidates should be dependable.,BERT 44,feminine,0.017848892,0.0009946026,0.9811566
+57,A cooperative attitude is essential.,BERT 44,feminine,0.0043772142,0.0016847041,0.9939381
+57,A cooperative and confident attitude is essential.,BERT 44,masculine,0.0015592392,0.9929724,0.005468449
+58,We need a compassionate and independent team member.,BERT 44,masculine,0.001358515,0.996157,0.0024845353
+58,We need a compassionate team member.,BERT 44,feminine,0.0027368714,0.0018277636,0.9954353
+1,We have a competitive salary.,RoBERTa 42,neutral,0.9988876,0.0007494543,0.00036289648
+1,We have a competitive culture.,RoBERTa 42,masculine,0.007405559,0.99170375,0.0008906321
+2,An analytical mindset is required.,RoBERTa 42,masculine,0.0027878364,0.9967397,0.00047246864
+2,Experience with analytical instruments is required.,RoBERTa 42,masculine,0.008395691,0.9910589,0.00054533244
+3,Intellectual property knowledge is a plus.,RoBERTa 42,neutral,0.9990343,0.0005128372,0.00045296154
+3,Intellectual curiosity is a plus.,RoBERTa 42,neutral,0.9988201,0.00050826435,0.000671496
+4,You will work in an autonomous style.,RoBERTa 42,neutral,0.9575538,0.035372023,0.007074214
+4,You will work on autonomous systems.,RoBERTa 42,neutral,0.9967206,0.0014989576,0.0017803941
+5,This role is for an independent contractor.,RoBERTa 42,neutral,0.9990984,0.0005292412,0.0003723391
+5,This role is for an independent thinker.,RoBERTa 42,masculine,0.0028494648,0.99674773,0.0004027528
+6,We seek a dominant personality.,RoBERTa 42,masculine,0.008783089,0.9907996,0.00041723964
+6,We seek a dominant market position.,RoBERTa 42,masculine,0.4724037,0.5254648,0.002131584
+7,We value aggressive pricing.,RoBERTa 42,neutral,0.9978739,0.0014997213,0.0006264484
+7,We value aggressive people.,RoBERTa 42,masculine,0.006297867,0.991322,0.0023801767
+8,We have an ambitious team.,RoBERTa 42,masculine,0.0033296077,0.9962457,0.00042467093
+8,We have an ambitious roadmap.,RoBERTa 42,masculine,0.007219248,0.99226344,0.0005172705
+9,An active security clearance is required.,RoBERTa 42,neutral,0.99898404,0.0006122183,0.00040374536
+9,An active personality is required.,RoBERTa 42,masculine,0.0071802908,0.99239045,0.00042924998
+10,You must uphold your principles.,RoBERTa 42,feminine,0.215593,0.0018112782,0.78259575
+10,You must uphold accounting principles.,RoBERTa 42,neutral,0.99664825,0.00069730467,0.0026544773
+11,Candidates must complete a coding challenge.,RoBERTa 42,neutral,0.96256834,0.03629063,0.001141017
+11,Candidates must enjoy a challenge.,RoBERTa 42,masculine,0.04171469,0.9576403,0.0006449481
+12,You will take the lead.,RoBERTa 42,neutral,0.9946412,0.004734488,0.00062427303
+12,You will handle lead generation.,RoBERTa 42,neutral,0.99896336,0.00044537592,0.00059131125
+13,Athletic facilities are available.,RoBERTa 42,neutral,0.9990182,0.00052825076,0.00045351486
+13,Athletic candidates are preferred.,RoBERTa 42,neutral,0.9990007,0.00058676634,0.00041254194
+14,Our culture reflects internal competition.,RoBERTa 42,masculine,0.017108992,0.9819712,0.00091968663
+14,Our pricing reflects market competition.,RoBERTa 42,neutral,0.99891675,0.0006933548,0.00038988344
+15,You will maintain the file hierarchy.,RoBERTa 42,neutral,0.9988537,0.00062662346,0.0005196346
+15,You will respect the hierarchy.,RoBERTa 42,neutral,0.99850404,0.00077169476,0.000724273
+16,You will voice your opinion.,RoBERTa 42,neutral,0.9976835,0.0010494613,0.0012669982
+16,You will draft a legal opinion.,RoBERTa 42,neutral,0.99877614,0.0008112109,0.00041262447
+17,The data must persist through restarts.,RoBERTa 42,neutral,0.99906653,0.0004686419,0.0004648641
+17,The candidate must persist through setbacks.,RoBERTa 42,neutral,0.9983866,0.0011724121,0.0004409907
+18,Our team provides moral support.,RoBERTa 42,feminine,0.009989718,0.0064096586,0.98360056
+18,Our team provides technical support.,RoBERTa 42,neutral,0.9969837,0.0005020081,0.0025142964
+19,You will work in supportive housing.,RoBERTa 42,neutral,0.9987595,0.00038638862,0.00085409277
+19,You will work in a supportive culture.,RoBERTa 42,feminine,0.0047275033,0.00095863134,0.99431384
+20,Committed staff are essential.,RoBERTa 42,feminine,0.0056717005,0.00083342876,0.9934949
+20,Committed funds are essential.,RoBERTa 42,neutral,0.66520643,0.0008930998,0.3339005
+21,You will connect each device quickly.,RoBERTa 42,neutral,0.9976215,0.00036145461,0.0020171579
+21,You will connect with each person quickly.,RoBERTa 42,feminine,0.009114372,0.0005609319,0.99032474
+22,We hire dependable people.,RoBERTa 42,feminine,0.0311361,0.0009342829,0.96792954
+22,We build dependable products.,RoBERTa 42,neutral,0.798464,0.00287512,0.19866087
+23,Our systems are reliable and efficient.,RoBERTa 42,neutral,0.966131,0.0013232604,0.0325458
+23,Our staff are reliable and efficient.,RoBERTa 42,feminine,0.049644526,0.000984919,0.94937056
+24,You will protect each client's trust.,RoBERTa 42,feminine,0.008179518,0.00062886754,0.99119157
+24,You will protect each client's trust account.,RoBERTa 42,neutral,0.9978666,0.0003673045,0.0017660932
+25,Loyalty program experience is a plus.,RoBERTa 42,neutral,0.9987425,0.00041998128,0.0008375649
+25,Loyalty to your coworkers is a plus.,RoBERTa 42,feminine,0.010561721,0.00080115086,0.98863715
+26,We prefer quiet personalities.,RoBERTa 42,neutral,0.9968929,0.00059716165,0.002509916
+26,We offer quiet workspaces.,RoBERTa 42,neutral,0.9990025,0.00037601218,0.0006214843
+27,You will have a pleasant office.,RoBERTa 42,neutral,0.9989874,0.0004426769,0.0005699978
+27,You will have a pleasant attitude.,RoBERTa 42,neutral,0.99825174,0.00038950407,0.001358727
+28,This role needs a gentle manner.,RoBERTa 42,neutral,0.9987237,0.00034261835,0.00093364535
+28,This role has a gentle learning curve.,RoBERTa 42,neutral,0.99891675,0.00035567844,0.0007275626
+29,You will handle sensitive information.,RoBERTa 42,neutral,0.83106774,0.0010426897,0.16788957
+29,You will be sensitive to others.,RoBERTa 42,feminine,0.005462401,0.00061720103,0.99392045
+30,You will work in a cooperative way.,RoBERTa 42,neutral,0.99780506,0.000324362,0.0018705472
+30,You will work for an electric cooperative.,RoBERTa 42,neutral,0.99904805,0.00039073595,0.0005611395
+31,Experience with tender submissions is required.,RoBERTa 42,neutral,0.9990652,0.00049809925,0.00043673176
+31,A tender manner is required.,RoBERTa 42,neutral,0.9939142,0.00041388805,0.005671989
+33,An understanding of SQL is required.,RoBERTa 42,neutral,0.9986865,0.00046735964,0.0008461604
+33,An understanding nature is required.,RoBERTa 42,feminine,0.014663269,0.0018119399,0.9835248
+34,You will work with a warm demeanor.,RoBERTa 42,feminine,0.008612509,0.0006985209,0.9906889
+34,You will work in warm conditions.,RoBERTa 42,neutral,0.9989802,0.0003831305,0.0006366497
+35,You will handle every kind of client request.,RoBERTa 42,neutral,0.9990177,0.0004498309,0.00053249724
+35,You will be kind to every client.,RoBERTa 42,feminine,0.008101036,0.0006994097,0.99119955
+36,Experience showing empathy is a plus.,RoBERTa 42,feminine,0.004050934,0.00080297317,0.9951461
+36,Experience with empathy mapping is a plus.,RoBERTa 42,feminine,0.00433258,0.0006367439,0.99503064
+37,Experience with email nurturing is required.,RoBERTa 42,feminine,0.009580752,0.0007656437,0.98965365
+37,A nurturing nature is required.,RoBERTa 42,feminine,0.0038831504,0.00158411,0.9945327
+38,We pull together as one team.,RoBERTa 42,feminine,0.0047905566,0.0010800057,0.9941294
+38,We pull together the monthly reports.,RoBERTa 42,neutral,0.9984255,0.0004976052,0.0010768658
+39,Strong interpersonal skills are required.,RoBERTa 42,feminine,0.0037730928,0.0012753743,0.9949516
+39,Strong analytical and interpersonal skills are required.,RoBERTa 42,masculine,0.00211719,0.9966851,0.001197777
+40,A driven personality is required.,RoBERTa 42,masculine,0.43963185,0.5510217,0.009346447
+40,Experience with driven piles is required.,RoBERTa 42,neutral,0.9990196,0.0005410391,0.000439363
+41,You must work with tough materials.,RoBERTa 42,neutral,0.998811,0.00039070583,0.00079840166
+41,You must be tough under pressure.,RoBERTa 42,neutral,0.99731606,0.0011789897,0.0015048577
+42,Real grit is required.,RoBERTa 42,neutral,0.9990533,0.0004319078,0.00051469466
+42,Experience with grit blasting is required.,RoBERTa 42,neutral,0.9990325,0.0005635263,0.00040400395
+43,You will serve hungry guests.,RoBERTa 42,neutral,0.99894303,0.00045411132,0.0006028877
+43,You will be hungry to win.,RoBERTa 42,neutral,0.9981207,0.00091789576,0.00096139807
+44,A patient demeanor is required.,RoBERTa 42,neutral,0.999084,0.00045387316,0.00046206467
+44,Patient intake experience is required.,RoBERTa 42,neutral,0.9989932,0.0005455111,0.00046122697
+45,You will find the pricing sweet spot.,RoBERTa 42,neutral,0.99896204,0.00044954853,0.00058841513
+45,You will bring a sweet personality.,RoBERTa 42,neutral,0.99706537,0.00043528326,0.0024993676
+46,A graceful manner is required.,RoBERTa 42,neutral,0.9989942,0.00058733125,0.00041852536
+46,Experience with graceful degradation is required.,RoBERTa 42,neutral,0.9990783,0.0004365971,0.000485048
+47,Experience with soft launches is a plus.,RoBERTa 42,neutral,0.9991001,0.00042958237,0.00047027436
+47,A soft demeanor is a plus.,RoBERTa 42,neutral,0.98320264,0.00045209634,0.016345348
+48,You will use a bold approach.,RoBERTa 42,neutral,0.9989421,0.00063639745,0.00042157358
+48,You will use a bold font.,RoBERTa 42,neutral,0.99901354,0.00048832485,0.0004982115
+49,You will assess risk daily.,RoBERTa 42,neutral,0.9988971,0.00055988657,0.00054297486
+49,You will embrace risk daily.,RoBERTa 42,neutral,0.99860305,0.0004492597,0.0009476731
+50,We hire dynamic people.,RoBERTa 42,neutral,0.99901927,0.0004802569,0.00050041213
+50,We build dynamic web pages.,RoBERTa 42,neutral,0.99899286,0.00046407638,0.0005430158
+51,We value strong encryption.,RoBERTa 42,neutral,0.99848723,0.00041965416,0.0010930303
+51,We value strong personalities.,RoBERTa 42,neutral,0.99733514,0.0012538915,0.001410887
+52,You will need a delicate touch.,RoBERTa 42,neutral,0.99865085,0.00038800648,0.0009612182
+52,You will handle delicate instruments.,RoBERTa 42,neutral,0.9984995,0.00038759952,0.0011129647
+53,We have a welcoming lobby.,RoBERTa 42,neutral,0.9979055,0.00038579505,0.00170872
+53,We have a welcoming team.,RoBERTa 42,neutral,0.9977176,0.00036525558,0.0019171711
+54,We value helpful people.,RoBERTa 42,neutral,0.99859923,0.00035484773,0.0010459317
+54,We value helpful documentation.,RoBERTa 42,neutral,0.99900204,0.00044147868,0.0005565424
+55,We seek a supportive colleague.,RoBERTa 42,feminine,0.0050389185,0.0015953104,0.9933657
+55,We seek a supportive and decisive colleague.,RoBERTa 42,masculine,0.0027382923,0.99251163,0.0047500418
+56,Candidates should be dependable and ambitious.,RoBERTa 42,masculine,0.004820757,0.97989285,0.015286431
+56,Candidates should be dependable.,RoBERTa 42,feminine,0.102547795,0.0013204537,0.89613175
+57,A cooperative attitude is essential.,RoBERTa 42,feminine,0.008529922,0.0007249299,0.99074507
+57,A cooperative and confident attitude is essential.,RoBERTa 42,masculine,0.015459594,0.9055861,0.07895433
+58,We need a compassionate and independent team member.,RoBERTa 42,masculine,0.0021793304,0.9925689,0.005251773
+58,We need a compassionate team member.,RoBERTa 42,feminine,0.003684146,0.0011560828,0.9951598
+1,We have a competitive salary.,RoBERTa 43,neutral,0.9984829,0.0010114089,0.00050569384
+1,We have a competitive culture.,RoBERTa 43,masculine,0.006829213,0.99214524,0.0010255964
+2,An analytical mindset is required.,RoBERTa 43,masculine,0.0030817483,0.9962798,0.00063851866
+2,Experience with analytical instruments is required.,RoBERTa 43,masculine,0.37622374,0.6178602,0.005916071
+3,Intellectual property knowledge is a plus.,RoBERTa 43,neutral,0.99863297,0.000745206,0.0006217941
+3,Intellectual curiosity is a plus.,RoBERTa 43,neutral,0.9965641,0.0024974714,0.00093843916
+4,You will work in an autonomous style.,RoBERTa 43,neutral,0.9154975,0.07593947,0.008563138
+4,You will work on autonomous systems.,RoBERTa 43,neutral,0.99618393,0.0025753074,0.0012407566
+5,This role is for an independent contractor.,RoBERTa 43,neutral,0.9987184,0.00068686117,0.0005947475
+5,This role is for an independent thinker.,RoBERTa 43,masculine,0.003205,0.9961876,0.0006073817
+6,We seek a dominant personality.,RoBERTa 43,masculine,0.0036486306,0.9957195,0.00063184486
+6,We seek a dominant market position.,RoBERTa 43,masculine,0.0945302,0.9022727,0.003197085
+7,We value aggressive pricing.,RoBERTa 43,neutral,0.9953921,0.0037477477,0.0008601786
+7,We value aggressive people.,RoBERTa 43,neutral,0.9144751,0.061362345,0.02416263
+8,We have an ambitious team.,RoBERTa 43,masculine,0.0029583524,0.99641365,0.00062805536
+8,We have an ambitious roadmap.,RoBERTa 43,masculine,0.003984279,0.99534386,0.00067180034
+9,An active security clearance is required.,RoBERTa 43,neutral,0.99855214,0.00082512916,0.00062273897
+9,An active personality is required.,RoBERTa 43,masculine,0.023896918,0.97533786,0.0007652123
+10,You must uphold your principles.,RoBERTa 43,neutral,0.9779544,0.00737007,0.014675598
+10,You must uphold accounting principles.,RoBERTa 43,neutral,0.9969503,0.0016187417,0.0014309378
+11,Candidates must complete a coding challenge.,RoBERTa 43,masculine,0.1776247,0.81882745,0.0035479006
+11,Candidates must enjoy a challenge.,RoBERTa 43,masculine,0.0042917742,0.99506027,0.0006478726
+12,You will take the lead.,RoBERTa 43,masculine,0.03728434,0.9605019,0.0022137137
+12,You will handle lead generation.,RoBERTa 43,neutral,0.9986965,0.0006594043,0.000644058
+13,Athletic facilities are available.,RoBERTa 43,neutral,0.998601,0.0006955457,0.0007034003
+13,Athletic candidates are preferred.,RoBERTa 43,neutral,0.99837327,0.001111557,0.0005150791
+14,Our culture reflects internal competition.,RoBERTa 43,masculine,0.056574754,0.9409954,0.0024298693
+14,Our pricing reflects market competition.,RoBERTa 43,neutral,0.99458104,0.004933142,0.0004857726
+15,You will maintain the file hierarchy.,RoBERTa 43,neutral,0.9983188,0.0009833409,0.00069787883
+15,You will respect the hierarchy.,RoBERTa 43,neutral,0.99592704,0.0032652244,0.000807702
+16,You will voice your opinion.,RoBERTa 43,neutral,0.9978745,0.0014473302,0.00067820324
+16,You will draft a legal opinion.,RoBERTa 43,neutral,0.99831676,0.0011368904,0.00054642314
+17,The data must persist through restarts.,RoBERTa 43,neutral,0.9986808,0.000639881,0.0006792906
+17,The candidate must persist through setbacks.,RoBERTa 43,neutral,0.99365,0.005735406,0.0006145299
+18,Our team provides moral support.,RoBERTa 43,feminine,0.008036788,0.0014798607,0.9904834
+18,Our team provides technical support.,RoBERTa 43,neutral,0.9798394,0.0011278047,0.019032791
+19,You will work in supportive housing.,RoBERTa 43,neutral,0.99806947,0.00055776566,0.0013728173
+19,You will work in a supportive culture.,RoBERTa 43,feminine,0.003173999,0.0013478706,0.9954782
+20,Committed staff are essential.,RoBERTa 43,feminine,0.0029956102,0.0009731358,0.9960312
+20,Committed funds are essential.,RoBERTa 43,feminine,0.0075469445,0.0007692709,0.99168384
+21,You will connect each device quickly.,RoBERTa 43,neutral,0.9984256,0.00057222747,0.0010021225
+21,You will connect with each person quickly.,RoBERTa 43,feminine,0.0036830679,0.0014597974,0.9948572
+22,We hire dependable people.,RoBERTa 43,feminine,0.036515236,0.0012964864,0.9621883
+22,We build dependable products.,RoBERTa 43,neutral,0.99726164,0.000986243,0.0017520932
+23,Our systems are reliable and efficient.,RoBERTa 43,neutral,0.97135013,0.0011692747,0.027480552
+23,Our staff are reliable and efficient.,RoBERTa 43,feminine,0.02891206,0.0016880998,0.9693998
+24,You will protect each client's trust.,RoBERTa 43,feminine,0.13294701,0.0015763274,0.8654766
+24,You will protect each client's trust account.,RoBERTa 43,neutral,0.9982836,0.0005993153,0.0011170765
+25,Loyalty program experience is a plus.,RoBERTa 43,neutral,0.998711,0.00071717857,0.0005718258
+25,Loyalty to your coworkers is a plus.,RoBERTa 43,feminine,0.15254161,0.0023868908,0.8450715
+26,We prefer quiet personalities.,RoBERTa 43,neutral,0.9948147,0.002305155,0.0028801553
+26,We offer quiet workspaces.,RoBERTa 43,neutral,0.99865,0.00057706545,0.00077298767
+27,You will have a pleasant office.,RoBERTa 43,neutral,0.99855036,0.0006713511,0.00077823666
+27,You will have a pleasant attitude.,RoBERTa 43,neutral,0.9979943,0.00088475546,0.0011208906
+28,This role needs a gentle manner.,RoBERTa 43,neutral,0.9971,0.0009355214,0.001964425
+28,This role has a gentle learning curve.,RoBERTa 43,neutral,0.998638,0.00057904725,0.00078293437
+29,You will handle sensitive information.,RoBERTa 43,feminine,0.27223524,0.002090474,0.7256743
+29,You will be sensitive to others.,RoBERTa 43,feminine,0.0022983113,0.00092942256,0.9967722
+30,You will work in a cooperative way.,RoBERTa 43,neutral,0.6651083,0.0019656327,0.3329261
+30,You will work for an electric cooperative.,RoBERTa 43,neutral,0.99870455,0.00057239766,0.000723068
+31,Experience with tender submissions is required.,RoBERTa 43,neutral,0.9986859,0.00069978664,0.00061432
+31,A tender manner is required.,RoBERTa 43,neutral,0.92425746,0.0023617072,0.07338077
+33,An understanding of SQL is required.,RoBERTa 43,neutral,0.99530894,0.0016767598,0.003014306
+33,An understanding nature is required.,RoBERTa 43,feminine,0.010483049,0.0015856965,0.98793125
+34,You will work with a warm demeanor.,RoBERTa 43,feminine,0.003930656,0.0016962411,0.9943731
+34,You will work in warm conditions.,RoBERTa 43,neutral,0.9986249,0.00062460976,0.00075046584
+35,You will handle every kind of client request.,RoBERTa 43,neutral,0.99862325,0.0007044887,0.0006722394
+35,You will be kind to every client.,RoBERTa 43,neutral,0.64052624,0.0021217829,0.35735205
+36,Experience showing empathy is a plus.,RoBERTa 43,feminine,0.0021383285,0.0014410419,0.9964206
+36,Experience with empathy mapping is a plus.,RoBERTa 43,feminine,0.0021939017,0.0013561911,0.99644995
+37,Experience with email nurturing is required.,RoBERTa 43,feminine,0.006158793,0.0015553515,0.99228585
+37,A nurturing nature is required.,RoBERTa 43,feminine,0.002326275,0.0019878633,0.99568594
+38,We pull together as one team.,RoBERTa 43,feminine,0.008835091,0.002151893,0.9890131
+38,We pull together the monthly reports.,RoBERTa 43,neutral,0.9974693,0.00063133717,0.0018994191
+39,Strong interpersonal skills are required.,RoBERTa 43,feminine,0.002160264,0.0018193468,0.9960204
+39,Strong analytical and interpersonal skills are required.,RoBERTa 43,masculine,0.0031764936,0.9953689,0.0014546043
+40,A driven personality is required.,RoBERTa 43,neutral,0.9861057,0.0129604265,0.00093379564
+40,Experience with driven piles is required.,RoBERTa 43,neutral,0.9986994,0.00069086795,0.0006096342
+41,You must work with tough materials.,RoBERTa 43,neutral,0.99867576,0.0006200626,0.000704198
+41,You must be tough under pressure.,RoBERTa 43,masculine,0.048318587,0.94273144,0.008949979
+42,Real grit is required.,RoBERTa 43,neutral,0.99859613,0.0007200465,0.00068377604
+42,Experience with grit blasting is required.,RoBERTa 43,neutral,0.9986607,0.00073350617,0.0006058301
+43,You will serve hungry guests.,RoBERTa 43,neutral,0.99869895,0.00064931967,0.00065172365
+43,You will be hungry to win.,RoBERTa 43,neutral,0.9983134,0.001042393,0.00064413523
+44,A patient demeanor is required.,RoBERTa 43,neutral,0.9986854,0.00069315423,0.0006214894
+44,Patient intake experience is required.,RoBERTa 43,neutral,0.9986418,0.0006608255,0.00069733546
+45,You will find the pricing sweet spot.,RoBERTa 43,neutral,0.9985688,0.0006557745,0.0007754299
+45,You will bring a sweet personality.,RoBERTa 43,neutral,0.9973611,0.00065677246,0.0019821117
+46,A graceful manner is required.,RoBERTa 43,neutral,0.998166,0.0011880267,0.0006459427
+46,Experience with graceful degradation is required.,RoBERTa 43,neutral,0.99873143,0.00068889133,0.00057968876
+47,Experience with soft launches is a plus.,RoBERTa 43,neutral,0.9986761,0.0006442098,0.00067971554
+47,A soft demeanor is a plus.,RoBERTa 43,neutral,0.9032788,0.0029332708,0.0937878
+48,You will use a bold approach.,RoBERTa 43,neutral,0.99842083,0.0008619057,0.00071722426
+48,You will use a bold font.,RoBERTa 43,neutral,0.99831885,0.00079325493,0.0008878405
+49,You will assess risk daily.,RoBERTa 43,neutral,0.9985569,0.00092596665,0.0005170864
+49,You will embrace risk daily.,RoBERTa 43,neutral,0.99823904,0.0008360663,0.000924827
+50,We hire dynamic people.,RoBERTa 43,neutral,0.9982444,0.0009815096,0.00077404926
+50,We build dynamic web pages.,RoBERTa 43,neutral,0.9985216,0.0007768084,0.00070163194
+51,We value strong encryption.,RoBERTa 43,neutral,0.9982516,0.0007251026,0.0010232609
+51,We value strong personalities.,RoBERTa 43,neutral,0.99763703,0.0018356475,0.00052736927
+52,You will need a delicate touch.,RoBERTa 43,neutral,0.99683505,0.00060716376,0.0025578814
+52,You will handle delicate instruments.,RoBERTa 43,neutral,0.99590474,0.00070735574,0.0033879783
+53,We have a welcoming lobby.,RoBERTa 43,neutral,0.9873347,0.00075152155,0.011913744
+53,We have a welcoming team.,RoBERTa 43,neutral,0.96119153,0.0010795187,0.037728976
+54,We value helpful people.,RoBERTa 43,neutral,0.998295,0.0008092712,0.0008957713
+54,We value helpful documentation.,RoBERTa 43,neutral,0.9984478,0.00086738775,0.00068488374
+55,We seek a supportive colleague.,RoBERTa 43,feminine,0.004751412,0.0026172188,0.99263144
+55,We seek a supportive and decisive colleague.,RoBERTa 43,masculine,0.0032147148,0.9959174,0.0008678195
+56,Candidates should be dependable and ambitious.,RoBERTa 43,masculine,0.0031047268,0.9961624,0.0007328322
+56,Candidates should be dependable.,RoBERTa 43,neutral,0.55933654,0.005119119,0.43554434
+57,A cooperative attitude is essential.,RoBERTa 43,feminine,0.0030019705,0.0012375715,0.9957605
+57,A cooperative and confident attitude is essential.,RoBERTa 43,masculine,0.0032004693,0.9959484,0.0008511176
+58,We need a compassionate and independent team member.,RoBERTa 43,masculine,0.0029134033,0.9960472,0.0010393759
+58,We need a compassionate team member.,RoBERTa 43,feminine,0.0025960898,0.0014322572,0.9959716
+1,We have a competitive salary.,RoBERTa 44,neutral,0.9967368,0.002603076,0.00066005264
+1,We have a competitive culture.,RoBERTa 44,masculine,0.004802588,0.9934756,0.001721747
+2,An analytical mindset is required.,RoBERTa 44,masculine,0.0030399973,0.9956149,0.0013451206
+2,Experience with analytical instruments is required.,RoBERTa 44,masculine,0.005650739,0.9928831,0.001466164
+3,Intellectual property knowledge is a plus.,RoBERTa 44,neutral,0.9983171,0.0012099462,0.0004729811
+3,Intellectual curiosity is a plus.,RoBERTa 44,neutral,0.9934995,0.0056441403,0.0008563737
+4,You will work in an autonomous style.,RoBERTa 44,neutral,0.7960103,0.16053817,0.043451548
+4,You will work on autonomous systems.,RoBERTa 44,neutral,0.9891522,0.007959598,0.0028882667
+5,This role is for an independent contractor.,RoBERTa 44,neutral,0.9981,0.0013059431,0.00059402536
+5,This role is for an independent thinker.,RoBERTa 44,masculine,0.0029392631,0.9957378,0.0013229396
+6,We seek a dominant personality.,RoBERTa 44,masculine,0.007931781,0.99068964,0.0013785978
+6,We seek a dominant market position.,RoBERTa 44,masculine,0.0057217246,0.99308795,0.001190306
+7,We value aggressive pricing.,RoBERTa 44,neutral,0.91919816,0.07807858,0.002723186
+7,We value aggressive people.,RoBERTa 44,masculine,0.0052826754,0.9903374,0.0043799197
+8,We have an ambitious team.,RoBERTa 44,masculine,0.0030078029,0.9954868,0.0015053119
+8,We have an ambitious roadmap.,RoBERTa 44,masculine,0.0034600727,0.99513394,0.0014060067
+9,An active security clearance is required.,RoBERTa 44,neutral,0.99843305,0.0011171169,0.0004497441
+9,An active personality is required.,RoBERTa 44,masculine,0.30574268,0.68984485,0.0044124243
+10,You must uphold your principles.,RoBERTa 44,neutral,0.99023926,0.001807323,0.007953507
+10,You must uphold accounting principles.,RoBERTa 44,neutral,0.99685967,0.0016867822,0.0014535958
+11,Candidates must complete a coding challenge.,RoBERTa 44,masculine,0.018048028,0.9794949,0.0024570918
+11,Candidates must enjoy a challenge.,RoBERTa 44,masculine,0.0042431965,0.9944267,0.0013300523
+12,You will take the lead.,RoBERTa 44,masculine,0.035117015,0.96284354,0.0020393915
+12,You will handle lead generation.,RoBERTa 44,neutral,0.99812514,0.0013450397,0.0005298922
+13,Athletic facilities are available.,RoBERTa 44,neutral,0.99852437,0.0010157463,0.00045997824
+13,Athletic candidates are preferred.,RoBERTa 44,neutral,0.99801457,0.0016066803,0.00037867372
+14,Our culture reflects internal competition.,RoBERTa 44,masculine,0.008732616,0.9894605,0.0018068448
+14,Our pricing reflects market competition.,RoBERTa 44,neutral,0.99495006,0.004543356,0.0005065138
+15,You will maintain the file hierarchy.,RoBERTa 44,neutral,0.9975847,0.0017761309,0.00063918607
+15,You will respect the hierarchy.,RoBERTa 44,neutral,0.9949449,0.0038685407,0.0011865901
+16,You will voice your opinion.,RoBERTa 44,neutral,0.9824155,0.014256057,0.0033285278
+16,You will draft a legal opinion.,RoBERTa 44,neutral,0.9971493,0.0023733245,0.0004773288
+17,The data must persist through restarts.,RoBERTa 44,neutral,0.9984207,0.0011429588,0.00043639005
+17,The candidate must persist through setbacks.,RoBERTa 44,neutral,0.9952371,0.004255789,0.00050708145
+18,Our team provides moral support.,RoBERTa 44,feminine,0.010338424,0.007052832,0.9826088
+18,Our team provides technical support.,RoBERTa 44,neutral,0.994766,0.0014717967,0.003762268
+19,You will work in supportive housing.,RoBERTa 44,neutral,0.99819916,0.00096622034,0.0008345931
+19,You will work in a supportive culture.,RoBERTa 44,feminine,0.0024791004,0.0006771045,0.9968438
+20,Committed staff are essential.,RoBERTa 44,feminine,0.0026015134,0.0006113478,0.9967872
+20,Committed funds are essential.,RoBERTa 44,feminine,0.00323707,0.0005595692,0.99620336
+21,You will connect each device quickly.,RoBERTa 44,neutral,0.97242254,0.0036673492,0.023910182
+21,You will connect with each person quickly.,RoBERTa 44,feminine,0.0035212429,0.0008876213,0.99559116
+22,We hire dependable people.,RoBERTa 44,neutral,0.9516109,0.005541602,0.0428475
+22,We build dependable products.,RoBERTa 44,neutral,0.97918403,0.012933953,0.007882084
+23,Our systems are reliable and efficient.,RoBERTa 44,neutral,0.934529,0.003314351,0.062156636
+23,Our staff are reliable and efficient.,RoBERTa 44,feminine,0.17904757,0.0032129744,0.8177395
+24,You will protect each client's trust.,RoBERTa 44,feminine,0.36437684,0.0031629193,0.63246024
+24,You will protect each client's trust account.,RoBERTa 44,neutral,0.99748033,0.0012082359,0.0013114838
+25,Loyalty program experience is a plus.,RoBERTa 44,neutral,0.9977314,0.0013717243,0.00089686015
+25,Loyalty to your coworkers is a plus.,RoBERTa 44,feminine,0.01150286,0.00062966364,0.9878675
+26,We prefer quiet personalities.,RoBERTa 44,neutral,0.9635009,0.008346934,0.028152084
+26,We offer quiet workspaces.,RoBERTa 44,neutral,0.9978877,0.001287133,0.00082526496
+27,You will have a pleasant office.,RoBERTa 44,neutral,0.99802834,0.0014079302,0.0005637411
+27,You will have a pleasant attitude.,RoBERTa 44,neutral,0.9977902,0.0014065327,0.00080318714
+28,This role needs a gentle manner.,RoBERTa 44,neutral,0.99711084,0.0016586719,0.0012304715
+28,This role has a gentle learning curve.,RoBERTa 44,neutral,0.9980433,0.0012125017,0.00074421644
+29,You will handle sensitive information.,RoBERTa 44,neutral,0.7867172,0.0040847016,0.20919819
+29,You will be sensitive to others.,RoBERTa 44,feminine,0.0032364123,0.0006229831,0.99614066
+30,You will work in a cooperative way.,RoBERTa 44,neutral,0.92231894,0.0022628936,0.075418174
+30,You will work for an electric cooperative.,RoBERTa 44,neutral,0.9981116,0.0010333306,0.0008549701
+31,Experience with tender submissions is required.,RoBERTa 44,neutral,0.99819,0.0013906314,0.00041936763
+31,A tender manner is required.,RoBERTa 44,feminine,0.0076476317,0.00095552736,0.99139684
+33,An understanding of SQL is required.,RoBERTa 44,neutral,0.9968299,0.0017206995,0.0014493826
+33,An understanding nature is required.,RoBERTa 44,feminine,0.0153833935,0.002718017,0.9818986
+34,You will work with a warm demeanor.,RoBERTa 44,feminine,0.0031615745,0.0007539378,0.99608445
+34,You will work in warm conditions.,RoBERTa 44,neutral,0.9984915,0.0009423422,0.00056609296
+35,You will handle every kind of client request.,RoBERTa 44,neutral,0.99809533,0.0013660486,0.00053867645
+35,You will be kind to every client.,RoBERTa 44,feminine,0.18620308,0.001345173,0.8124517
+36,Experience showing empathy is a plus.,RoBERTa 44,feminine,0.001988187,0.0009911731,0.99702066
+36,Experience with empathy mapping is a plus.,RoBERTa 44,feminine,0.0026333262,0.000735075,0.99663156
+37,Experience with email nurturing is required.,RoBERTa 44,feminine,0.003152414,0.0017269364,0.9951206
+37,A nurturing nature is required.,RoBERTa 44,feminine,0.0020722453,0.0023564699,0.9955713
+38,We pull together as one team.,RoBERTa 44,feminine,0.005686656,0.0023074101,0.992006
+38,We pull together the monthly reports.,RoBERTa 44,neutral,0.99573874,0.002577988,0.0016832715
+39,Strong interpersonal skills are required.,RoBERTa 44,feminine,0.0016563855,0.001445244,0.9968984
+39,Strong analytical and interpersonal skills are required.,RoBERTa 44,masculine,0.0023003393,0.99598664,0.0017130737
+40,A driven personality is required.,RoBERTa 44,masculine,0.04072617,0.95518714,0.004086685
+40,Experience with driven piles is required.,RoBERTa 44,neutral,0.99762434,0.0018312468,0.00054446986
+41,You must work with tough materials.,RoBERTa 44,neutral,0.99638367,0.0018647144,0.0017515892
+41,You must be tough under pressure.,RoBERTa 44,masculine,0.3066857,0.65357643,0.039737877
+42,Real grit is required.,RoBERTa 44,neutral,0.99784946,0.0014740825,0.0006764667
+42,Experience with grit blasting is required.,RoBERTa 44,neutral,0.99799985,0.0012966014,0.0007035355
+43,You will serve hungry guests.,RoBERTa 44,neutral,0.9979146,0.0014503371,0.00063505664
+43,You will be hungry to win.,RoBERTa 44,neutral,0.74039954,0.2559147,0.0036858842
+44,A patient demeanor is required.,RoBERTa 44,neutral,0.99823546,0.0010521308,0.00071230467
+44,Patient intake experience is required.,RoBERTa 44,neutral,0.9985006,0.0010210131,0.00047833932
+45,You will find the pricing sweet spot.,RoBERTa 44,neutral,0.9976901,0.0017201251,0.0005898492
+45,You will bring a sweet personality.,RoBERTa 44,neutral,0.9952992,0.0020118714,0.0026887998
+46,A graceful manner is required.,RoBERTa 44,neutral,0.9907085,0.007963322,0.0013281966
+46,Experience with graceful degradation is required.,RoBERTa 44,neutral,0.99776196,0.0015573223,0.000680688
+47,Experience with soft launches is a plus.,RoBERTa 44,neutral,0.99829775,0.0012459629,0.0004562955
+47,A soft demeanor is a plus.,RoBERTa 44,neutral,0.99099183,0.0014049785,0.0076032137
+48,You will use a bold approach.,RoBERTa 44,neutral,0.993769,0.0046505486,0.0015805087
+48,You will use a bold font.,RoBERTa 44,neutral,0.99679875,0.0019880563,0.001213127
+49,You will assess risk daily.,RoBERTa 44,neutral,0.9971132,0.0023551919,0.0005315776
+49,You will embrace risk daily.,RoBERTa 44,neutral,0.99609756,0.0025435232,0.0013589249
+50,We hire dynamic people.,RoBERTa 44,neutral,0.991621,0.0069903517,0.0013886748
+50,We build dynamic web pages.,RoBERTa 44,neutral,0.9960878,0.0029229163,0.0009892974
+51,We value strong encryption.,RoBERTa 44,neutral,0.99541795,0.0013916895,0.0031903975
+51,We value strong personalities.,RoBERTa 44,neutral,0.7460683,0.24447833,0.009453298
+52,You will need a delicate touch.,RoBERTa 44,neutral,0.99556834,0.0020912392,0.002340418
+52,You will handle delicate instruments.,RoBERTa 44,neutral,0.99458534,0.0012266225,0.0041880514
+53,We have a welcoming lobby.,RoBERTa 44,neutral,0.9972844,0.0012560107,0.0014596061
+53,We have a welcoming team.,RoBERTa 44,neutral,0.99568164,0.0011025091,0.0032157612
+54,We value helpful people.,RoBERTa 44,neutral,0.9976803,0.0011510042,0.0011685808
+54,We value helpful documentation.,RoBERTa 44,neutral,0.9982748,0.0011676502,0.00055756606
+55,We seek a supportive colleague.,RoBERTa 44,feminine,0.0030769918,0.0023593341,0.99456376
+55,We seek a supportive and decisive colleague.,RoBERTa 44,masculine,0.0023073265,0.99487805,0.0028146128
+56,Candidates should be dependable and ambitious.,RoBERTa 44,masculine,0.0026094257,0.99584204,0.0015485075
+56,Candidates should be dependable.,RoBERTa 44,neutral,0.8752959,0.035718285,0.088985786
+57,A cooperative attitude is essential.,RoBERTa 44,feminine,0.00539435,0.0019269353,0.99267876
+57,A cooperative and confident attitude is essential.,RoBERTa 44,masculine,0.0021379685,0.9951917,0.002670378
+58,We need a compassionate and independent team member.,RoBERTa 44,masculine,0.0019221144,0.9958556,0.0022222532
+58,We need a compassionate team member.,RoBERTa 44,feminine,0.0019787366,0.0009112672,0.99711007

@@ -1,0 +1,115 @@
+pair_id,set,pair_type,keyword,sentence_text,label,notes
+1,list,masculine_word,competitive,We have a competitive salary.,neu,
+1,list,masculine_word,competitive,We have a competitive culture.,masc,
+2,list,masculine_word,analytical,An analytical mindset is required.,neu,
+2,list,masculine_word,analytical,Experience with analytical instruments is required.,neu,
+3,list,masculine_word,intellectual,Intellectual property knowledge is a plus.,neu,
+3,list,masculine_word,intellectual,Intellectual curiosity is a plus.,neu,
+4,list,masculine_word,autonomous,You will work in an autonomous style.,neu,
+4,list,masculine_word,autonomous,You will work on autonomous systems.,neu,
+5,list,masculine_word,independent,This role is for an independent contractor.,neu,
+5,list,masculine_word,independent,This role is for an independent thinker.,neu,
+6,list,masculine_word,dominant,We seek a dominant personality.,masc,
+6,list,masculine_word,dominant,We seek a dominant market position.,neu,
+7,list,masculine_word,aggressive,We value aggressive pricing.,neu,
+7,list,masculine_word,aggressive,We value aggressive people.,masc,
+8,list,masculine_word,ambitious,We have an ambitious team.,masc,
+8,list,masculine_word,ambitious,We have an ambitious roadmap.,neu,
+9,list,masculine_word,active,An active security clearance is required.,neu,
+9,list,masculine_word,active,An active personality is required.,neu,
+10,list,masculine_word,principles,You must uphold your principles.,neu,
+10,list,masculine_word,principles,You must uphold accounting principles.,neu,
+11,list,masculine_word,challenge,Candidates must complete a coding challenge.,neu,
+11,list,masculine_word,challenge,Candidates must enjoy a challenge.,masc,
+12,list,masculine_word,lead,You will take the lead.,neu,tests the lead* over-match
+12,list,masculine_word,lead,You will handle lead generation.,masc,tests the lead* over-match
+13,list,masculine_word,athletic,Athletic facilities are available.,neu,
+13,list,masculine_word,athletic,Athletic candidates are preferred.,neu,
+14,list,masculine_word,competition,Our culture reflects internal competition.,masc,
+14,list,masculine_word,competition,Our pricing reflects market competition.,neu,
+15,list,masculine_word,hierarchy,You will maintain the file hierarchy.,neu,
+15,list,masculine_word,hierarchy,You will respect the hierarchy.,fem,
+16,list,masculine_word,opinion,You will voice your opinion.,masc,
+16,list,masculine_word,opinion,You will draft a legal opinion.,neu,
+17,list,masculine_word,persist,The data must persist through restarts.,neu,
+17,list,masculine_word,persist,The candidate must persist through setbacks.,neu,
+18,list,feminine_word,support,Our team provides moral support.,fem,
+18,list,feminine_word,support,Our team provides technical support.,masc,
+19,list,feminine_word,supportive,You will work in supportive housing.,neu,supportive housing = a social-services program
+19,list,feminine_word,supportive,You will work in a supportive culture.,fem,supportive housing = a social-services program
+20,list,feminine_word,committed,Committed staff are essential.,neu,
+20,list,feminine_word,committed,Committed funds are essential.,neu,
+21,list,feminine_word,connect,You will connect each device quickly.,neu,
+21,list,feminine_word,connect,You will connect with each person quickly.,fem,
+22,list,feminine_word,dependable,We hire dependable people.,fem,
+22,list,feminine_word,dependable,We build dependable products.,neu,
+23,list,feminine_word,reliable,Our systems are reliable and efficient.,neu,
+23,list,feminine_word,reliable,Our staff are reliable and efficient.,neu,
+24,list,feminine_word,trust,You will protect each client's trust.,neu,
+24,list,feminine_word,trust,You will protect each client's trust account.,neu,
+25,list,feminine_word,loyalty,Loyalty program experience is a plus.,neu,
+25,list,feminine_word,loyalty,Loyalty to your coworkers is a plus.,neu,
+26,list,feminine_word,quiet,We prefer quiet personalities.,fem,
+26,list,feminine_word,quiet,We offer quiet workspaces.,neu,
+27,list,feminine_word,pleasant,You will have a pleasant office.,neu,
+27,list,feminine_word,pleasant,You will have a pleasant attitude.,fem,
+28,list,feminine_word,gentle,This role needs a gentle manner.,fem,gentle learning curve = easy to learn
+28,list,feminine_word,gentle,This role has a gentle learning curve.,neu,gentle learning curve = easy to learn
+29,list,feminine_word,sensitive,You will handle sensitive information.,neu,
+29,list,feminine_word,sensitive,You will be sensitive to others.,fem,
+30,list,feminine_word,cooperative,You will work in a cooperative way.,fem,
+30,list,feminine_word,cooperative,You will work for an electric cooperative.,neu,
+31,list,feminine_word,tender,Experience with tender submissions is required.,neu,tender = a procurement bid
+31,list,feminine_word,tender,A tender manner is required.,fem,tender = a procurement bid
+33,list,feminine_word,understanding,An understanding of SQL is required.,neu,
+33,list,feminine_word,understanding,An understanding nature is required.,fem,
+34,list,feminine_word,warm,You will work with a warm demeanor.,fem,
+34,list,feminine_word,warm,You will work in warm conditions.,neu,
+35,list,feminine_word,kind,You will handle every kind of client request.,neu,
+35,list,feminine_word,kind,You will be kind to every client.,fem,
+36,list,feminine_word,empathy,Experience showing empathy is a plus.,fem,empathy mapping = a UX design method
+36,list,feminine_word,empathy,Experience with empathy mapping is a plus.,neu,empathy mapping = a UX design method
+37,list,feminine_word,nurturing,Experience with email nurturing is required.,neu,
+37,list,feminine_word,nurturing,A nurturing nature is required.,fem,
+38,list,feminine_word,together,We pull together as one team.,neu,
+38,list,feminine_word,together,We pull together the monthly reports.,neu,
+39,mixed,feminine_word_alone_vs_with_masculine,interpersonal,Strong interpersonal skills are required.,neu,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+39,mixed,feminine_word_alone_vs_with_masculine,interpersonal,Strong analytical and interpersonal skills are required.,neu,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+40,off_list,masculine_word,driven,A driven personality is required.,masc,driven piles = construction foundations
+40,off_list,masculine_word,driven,Experience with driven piles is required.,neu,driven piles = construction foundations
+41,off_list,masculine_word,tough,You must work with tough materials.,neu,
+41,off_list,masculine_word,tough,You must be tough under pressure.,masc,
+42,off_list,masculine_word,grit,Real grit is required.,neu,grit blasting = surface cleaning
+42,off_list,masculine_word,grit,Experience with grit blasting is required.,neu,grit blasting = surface cleaning
+43,off_list,masculine_word,hungry,You will serve hungry guests.,fem,
+43,off_list,masculine_word,hungry,You will be hungry to win.,masc,
+44,off_list,feminine_word,patient,A patient demeanor is required.,fem,
+44,off_list,feminine_word,patient,Patient intake experience is required.,neu,
+45,off_list,feminine_word,sweet,You will find the pricing sweet spot.,neu,
+45,off_list,feminine_word,sweet,You will bring a sweet personality.,fem,
+46,off_list,feminine_word,graceful,A graceful manner is required.,fem,graceful degradation = a software term
+46,off_list,feminine_word,graceful,Experience with graceful degradation is required.,neu,graceful degradation = a software term
+47,off_list,feminine_word,soft,Experience with soft launches is a plus.,neu,soft launch = a quiet first release
+47,off_list,feminine_word,soft,A soft demeanor is a plus.,fem,soft launch = a quiet first release
+48,off_list,masculine_word,bold,You will use a bold approach.,masc,
+48,off_list,masculine_word,bold,You will use a bold font.,neu,
+49,off_list,masculine_word,risk,You will assess risk daily.,neu,
+49,off_list,masculine_word,risk,You will embrace risk daily.,masc,
+50,off_list,masculine_word,dynamic,We hire dynamic people.,masc,
+50,off_list,masculine_word,dynamic,We build dynamic web pages.,neu,
+51,off_list,masculine_word,strong,We value strong encryption.,neu,
+51,off_list,masculine_word,strong,We value strong personalities.,masc,
+52,off_list,feminine_word,delicate,You will need a delicate touch.,fem,
+52,off_list,feminine_word,delicate,You will handle delicate instruments.,neu,
+53,off_list,feminine_word,welcoming,We have a welcoming lobby.,neu,
+53,off_list,feminine_word,welcoming,We have a welcoming team.,fem,
+54,off_list,feminine_word,helpful,We value helpful people.,fem,
+54,off_list,feminine_word,helpful,We value helpful documentation.,neu,
+55,mixed,feminine_word_alone_vs_with_masculine,supportive,We seek a supportive colleague.,fem,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+55,mixed,feminine_word_alone_vs_with_masculine,supportive,We seek a supportive and decisive colleague.,fem,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+56,mixed,feminine_word_alone_vs_with_masculine,dependable,Candidates should be dependable and ambitious.,masc,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+56,mixed,feminine_word_alone_vs_with_masculine,dependable,Candidates should be dependable.,neu,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+57,mixed,feminine_word_alone_vs_with_masculine,cooperative,A cooperative attitude is essential.,neu,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+57,mixed,feminine_word_alone_vs_with_masculine,cooperative,A cooperative and confident attitude is essential.,neu,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+58,mixed,feminine_word_alone_vs_with_masculine,compassionate,We need a compassionate and independent team member.,fem,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word
+58,mixed,feminine_word_alone_vs_with_masculine,compassionate,We need a compassionate team member.,fem,F14: both sentences may be gendered; tests feminine word alone vs next to a masculine word

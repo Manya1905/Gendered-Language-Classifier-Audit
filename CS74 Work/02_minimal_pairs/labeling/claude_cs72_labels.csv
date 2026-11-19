@@ -1,0 +1,115 @@
+pair_id,sentence_text,masc_words,fem_words,claude_label,cs72_label,reasoning
+1,We have a competitive salary.,competitive,,neutral,neutral,"'Competitive' modifies salary, describing compensation level rather than workplace culture or candidate traits."
+1,We have a competitive culture.,competitive,,masculine,masculine,"'Competitive culture' explicitly describes the workplace environment in masculine-coded terms, directly parallel to the canonical example from Gaucher et al."
+2,An analytical mindset is required.,analytical,,masculine,masculine,"'Analytical mindset' describes a desired cognitive trait of the candidate, which is masculine-coded."
+2,Experience with analytical instruments is required.,analytical,,neutral,neutral,"'Analytical instruments' refers to physical laboratory equipment, a factual technical requirement, not a cognitive trait or cultural value."
+3,Intellectual property knowledge is a plus.,intellectual,,neutral,neutral,"'Intellectual' here modifies 'property knowledge,' a factual domain requirement, not a desired personality trait or cultural descriptor."
+3,Intellectual curiosity is a plus.,intellectual,,masculine,masculine,"'Intellectual curiosity' describes a desired candidate trait, carrying masculine-coded connotation per Gaucher et al."
+4,You will work in an autonomous style.,autonomous,,masculine,masculine,"'Autonomous style' describes an expected work style of self-directed independence, which is masculine-coded per Gaucher et al."
+4,You will work on autonomous systems.,autonomous,,neutral,neutral,"'Autonomous' describes the type of technical systems being worked on, not a candidate trait or workplace culture."
+5,This role is for an independent contractor.,independent,,neutral,neutral,"'Independent contractor' is a legal/structural employment classification term, not a gendered trait or culture descriptor."
+5,This role is for an independent thinker.,independent,,masculine,masculine,"'Independent thinker' describes a desired candidate trait, signaling an autonomous, self-reliant work style, which is masculine-coded per Gaucher et al."
+6,We seek a dominant personality.,dominant,,masculine,masculine,"'Dominant' directly describes a desired candidate personality trait, which is masculine-coded."
+6,We seek a dominant market position.,dominant,,masculine,masculine,"'Dominant market position' describes an aggressive, competitive organizational goal, signaling masculine-coded company values and identity."
+7,We value aggressive pricing.,aggressive,,neutral,neutral,"'Aggressive' modifies 'pricing' in a business/market strategy context, not workplace culture or candidate traits, making it a factual commercial descriptor."
+7,We value aggressive people.,aggressive,,masculine,masculine,"'Aggressive' explicitly describes desired people/candidate traits, which is a masculine-coded characterization of ideal employees."
+8,We have an ambitious team.,ambitious,,masculine,masculine,"'Ambitious' describes team identity/culture, which is masculine-coded organizational framing."
+8,We have an ambitious roadmap.,ambitious,,masculine,masculine,"'Ambitious' describes the company's organizational identity and strategic outlook, which is a masculine-coded cultural signal."
+9,An active security clearance is required.,active,,neutral,neutral,"'Active' modifies 'security clearance' as a factual legal/structural requirement, not a personality trait or cultural descriptor."
+9,An active personality is required.,active,,masculine,masculine,"'Active' describes a required candidate personality type, which carries masculine-coded connotations of drive and assertiveness."
+10,You must uphold your principles.,principles,,masculine,masculine,'Principles' here describes an expected candidate behavioral standard tied to masculine-coded integrity/resolve framing.
+10,You must uphold accounting principles.,principles,,neutral,neutral,"'Principles' refers to established accounting standards (a structural/technical requirement), not a character trait or cultural value."
+11,Candidates must complete a coding challenge.,challenge,,neutral,neutral,"'Challenge' refers to a concrete task (a coding challenge) in a job duty/process context, not a masculine-coded cultural or trait descriptor."
+11,Candidates must enjoy a challenge.,challenge,,masculine,masculine,"'Challenge' is used to describe a desired candidate disposition/work style preference, signaling a masculine-coded competitive drive."
+12,You will take the lead.,lead,,neutral,neutral,"'Lead' is used as a verb describing a job duty or action, not as a trait or cultural descriptor."
+12,You will handle lead generation.,lead,,neutral,neutral,"'Lead generation' is a standard industry/job-duty term describing a business function, not a gendered trait or culture descriptor."
+13,Athletic facilities are available.,athletic,,neutral,neutral,"'Athletic facilities' describes a factual workplace benefit/amenity, not a candidate trait or cultural value."
+13,Athletic candidates are preferred.,athletic,,masculine,masculine,"'Athletic' is used to describe a preferred candidate trait, carrying a masculine-coded physical/competitive connotation."
+14,Our culture reflects internal competition.,competition,,masculine,masculine,"'Competition' describes internal workplace culture, signaling a masculine-coded competitive environment."
+14,Our pricing reflects market competition.,competition,,neutral,neutral,"'Competition' refers to external market conditions in a factual business context, not workplace culture or candidate traits."
+15,You will maintain the file hierarchy.,hierarchy,,neutral,neutral,"'Hierarchy' refers to a structural file organization system (a technical/organizational concept), not an organizational power structure framed in a masculine-coded way."
+15,You will respect the hierarchy.,hierarchy,,masculine,masculine,"'Hierarchy' frames organizational structure as something the candidate must defer to, reflecting masculine-coded hierarchical/authority framing."
+16,You will voice your opinion.,opinion,,neutral,neutral,"'Voice your opinion' describes a job duty or expected participatory behavior in a factual/procedural sense, not a gendered trait or culture descriptor."
+16,You will draft a legal opinion.,opinion,,neutral,neutral,"'Opinion' is used in the legal term 'legal opinion,' a purely structural job duty description with no gendered connotation."
+17,The data must persist through restarts.,persist,,neutral,neutral,"'Persist through restarts' is a technical/functional description of data behavior, not a human trait or cultural value."
+17,The candidate must persist through setbacks.,persist,,masculine,masculine,"'Persist through setbacks' describes a desired candidate trait of resilience/persistence, which is masculine-coded per Gaucher et al."
+18,Our team provides moral support.,,support,feminine,feminine,"'Moral support' describes a team behavior/culture, signaling a feminine-coded supportive workplace environment."
+18,Our team provides technical support.,,support,neutral,neutral,"'Technical support' is a job function/product description, not a descriptor of workplace culture or a feminine-coded interpersonal trait."
+19,You will work in supportive housing.,,supportive,neutral,neutral,"'Supportive housing' is a established technical/social-services term referring to a specific type of housing program, not a description of workplace culture."
+19,You will work in a supportive culture.,,supportive,feminine,feminine,'Supportive culture' describes the workplace/organizational culture in a feminine-coded way per Gaucher et al.
+20,Committed staff are essential.,,committed,feminine,feminine,'Committed' describes a desired staff trait in a feminine-coded sense of dedication and loyalty.
+20,Committed funds are essential.,,committed,neutral,neutral,"'Committed funds' is a financial/budgetary term describing capital allocation, not a personality trait or cultural descriptor."
+21,You will connect each device quickly.,,connect,neutral,neutral,"'Connect' is used in a literal technical sense (connecting devices), not as a relational or interpersonal work-style descriptor."
+21,You will connect with each person quickly.,,connect,feminine,feminine,"'Connect' describes an expected interpersonal work style, which is feminine-coded relationship-building behavior."
+22,We hire dependable people.,,dependable,feminine,feminine,"'Dependable' is a feminine-coded word used to describe the type of people the company hires, signaling a valued organizational trait."
+22,We build dependable products.,,dependable,neutral,neutral,"'Dependable products' describes a product quality attribute factually, not a desired candidate trait or cultural value."
+23,Our systems are reliable and efficient.,,reliable,neutral,neutral,"'Reliable' describes technical systems' performance characteristics, not a candidate trait or workplace culture."
+23,Our staff are reliable and efficient.,,reliable,feminine,feminine,"'Reliable' is used to describe staff character and organizational identity, carrying a feminine-coded connotation in a workplace culture context."
+24,You will protect each client's trust.,,trust,neutral,neutral,"'Protect each client's trust' describes a job duty related to maintaining client confidence in a fiduciary/professional sense, not a gendered trait or value."
+24,You will protect each client's trust account.,,trust,neutral,neutral,"'Trust account' is a legal/financial structural term referring to a specific account type, not a gendered trait or value."
+25,Loyalty program experience is a plus.,,loyalty,neutral,neutral,"'Loyalty' refers to a specific type of business program (loyalty program) as a factual experience requirement, not a personal trait."
+25,Loyalty to your coworkers is a plus.,,loyalty,feminine,feminine,"'Loyalty' is used as a desired interpersonal trait toward coworkers, which is a feminine-coded quality per Gaucher et al."
+26,We prefer quiet personalities.,,quiet,feminine,feminine,"'Quiet personalities' describes a preferred candidate disposition, carrying a feminine-coded connotation."
+26,We offer quiet workspaces.,,quiet,neutral,neutral,"'Quiet' describes a physical workspace amenity/feature, not a candidate trait or workplace culture in a gendered sense."
+27,You will have a pleasant office.,,pleasant,neutral,neutral,"'Pleasant office' describes a physical workspace feature factually, not a candidate trait or cultural value."
+27,You will have a pleasant attitude.,,pleasant,feminine,feminine,"'Pleasant' is used as a desired candidate trait directly paralleling the Gaucher et al. example ('a pleasant attitude'), making it feminine-coded."
+28,This role needs a gentle manner.,,gentle,feminine,feminine,"'Gentle manner' describes a desired interpersonal trait in the candidate, which is feminine-coded."
+28,This role has a gentle learning curve.,,gentle,neutral,neutral,"'Gentle' modifies 'learning curve' as a fixed idiomatic phrase describing role difficulty, not a personality trait or cultural value."
+29,You will handle sensitive information.,,sensitive,neutral,neutral,"'Sensitive' modifies 'information' as a factual descriptor of data classification, not a personality trait or work style."
+29,You will be sensitive to others.,,sensitive,feminine,feminine,"'Sensitive to others' describes an expected interpersonal work style, directly paralleling the Gaucher et al. example of feminine-coded language."
+30,You will work in a cooperative way.,,cooperative,feminine,feminine,"'Cooperative way' describes the expected work style of the candidate, which is feminine-coded per Gaucher et al."
+30,You will work for an electric cooperative.,,cooperative,neutral,neutral,"'Cooperative' is used as a noun referring to a specific organizational/legal structure (an electric cooperative), not as a trait or cultural descriptor."
+31,Experience with tender submissions is required.,,tender,neutral,neutral,"'Tender' here refers to a formal procurement/bid submission process — a structural, industry-specific term with no gendered connotation."
+31,A tender manner is required.,,tender,feminine,feminine,"'Tender manner' describes a required interpersonal disposition or candidate trait, which is feminine-coded."
+33,An understanding of SQL is required.,,understanding,neutral,neutral,"'Understanding' is used as a noun meaning knowledge/familiarity with a technical tool (SQL), not as a dispositional or interpersonal trait."
+33,An understanding nature is required.,,understanding,feminine,feminine,"'Understanding nature' describes a desired candidate trait, which is feminine-coded per Gaucher et al."
+34,You will work with a warm demeanor.,,warm,feminine,feminine,"'Warm demeanor' describes a desired interpersonal trait or expected work style, which is feminine-coded."
+34,You will work in warm conditions.,,warm,neutral,neutral,'Warm' describes a literal physical working condition rather than a personality trait or cultural value.
+35,You will handle every kind of client request.,,kind,neutral,neutral,"'Kind' is used as 'type of' in a purely structural sense describing the variety of client requests, not as the adjective meaning warm or caring."
+35,You will be kind to every client.,,kind,feminine,feminine,"'Kind to every client' describes an expected interpersonal work style toward clients, which is feminine-coded."
+36,Experience showing empathy is a plus.,,empathy,feminine,feminine,'Empathy' is a feminine-coded trait being cited as a desired candidate quality.
+36,Experience with empathy mapping is a plus.,,empathy,neutral,neutral,"'Empathy mapping' is a specific UX/design methodology term, used here as a technical skill requirement rather than a personality or cultural descriptor."
+37,Experience with email nurturing is required.,,nurturing,neutral,neutral,"'Nurturing' here refers to a specific technical marketing practice (email nurturing/drip campaigns), not a personality trait or workplace culture descriptor."
+37,A nurturing nature is required.,,nurturing,feminine,feminine,'Nurturing' is a strongly feminine-coded word used as a required candidate trait/nature.
+38,We pull together as one team.,,together,feminine,feminine,"'Together' frames the team's work style as collaborative and collective, which is a feminine-coded cultural descriptor of how the organization operates."
+38,We pull together the monthly reports.,,together,neutral,neutral,"'Pull together' is an idiomatic phrase describing a job duty (compiling reports), not a feminine-coded interpersonal or cultural descriptor."
+39,Strong interpersonal skills are required.,,interpersonal,feminine,feminine,"'Interpersonal skills' describes a required candidate trait centered on relationship-building and communication, which is feminine-coded."
+39,Strong analytical and interpersonal skills are required.,analytical,interpersonal,both,masculine,"'Analytical' is masculine-coded (desired cognitive trait) and 'interpersonal' is feminine-coded (desired social/relational trait), both describing candidate qualities."
+40,A driven personality is required.,,,,neutral,
+40,Experience with driven piles is required.,,,,neutral,
+41,You must work with tough materials.,,,,neutral,
+41,You must be tough under pressure.,,,,neutral,
+42,Real grit is required.,,,,neutral,
+42,Experience with grit blasting is required.,,,,neutral,
+43,You will serve hungry guests.,,,,neutral,
+43,You will be hungry to win.,,,,neutral,
+44,A patient demeanor is required.,,,,neutral,
+44,Patient intake experience is required.,,,,neutral,
+45,You will find the pricing sweet spot.,,,,neutral,
+45,You will bring a sweet personality.,,,,neutral,
+46,A graceful manner is required.,,,,neutral,
+46,Experience with graceful degradation is required.,,,,neutral,
+47,Experience with soft launches is a plus.,,,,neutral,
+47,A soft demeanor is a plus.,,,,neutral,
+48,You will use a bold approach.,,,,neutral,
+48,You will use a bold font.,,,,neutral,
+49,You will assess risk daily.,,,,neutral,
+49,You will embrace risk daily.,,,,neutral,
+50,We hire dynamic people.,,,,neutral,
+50,We build dynamic web pages.,,,,neutral,
+51,We value strong encryption.,,,,neutral,
+51,We value strong personalities.,,,,neutral,
+52,You will need a delicate touch.,,,,neutral,
+52,You will handle delicate instruments.,,,,neutral,
+53,We have a welcoming lobby.,,,,neutral,
+53,We have a welcoming team.,,,,neutral,
+54,We value helpful people.,,,,neutral,
+54,We value helpful documentation.,,,,neutral,
+55,We seek a supportive colleague.,,supportive,feminine,feminine,"'Supportive colleague' describes a desired interpersonal trait of the candidate, which is feminine-coded."
+55,We seek a supportive and decisive colleague.,decisive,supportive,both,masculine,"'Decisive' is masculine-coded and 'supportive' is feminine-coded, both describing desired candidate traits."
+56,Candidates should be dependable and ambitious.,ambitious,dependable,both,masculine,"'Ambitious' is masculine-coded and 'dependable' is feminine-coded, both describing desired candidate traits."
+56,Candidates should be dependable.,,dependable,feminine,feminine,'Dependable' is explicitly listed as a feminine-coded word and is used here as a desired candidate trait.
+57,A cooperative attitude is essential.,,cooperative,feminine,feminine,"'Cooperative' describes a desired candidate attitude/trait, which is a feminine-coded quality per Gaucher et al."
+57,A cooperative and confident attitude is essential.,confident,cooperative,both,masculine,"'Confident' is masculine-coded and 'cooperative' is feminine-coded, both describing desired candidate attitude/traits in a gendered context."
+58,We need a compassionate and independent team member.,independent,compassionate,both,masculine,"'Independent' is masculine-coded and 'compassionate' is feminine-coded, both used to describe desired candidate traits."
+58,We need a compassionate team member.,,compassionate,feminine,feminine,"'Compassionate' is a feminine-coded trait descriptor applied to the desired team member, consistent with Gaucher et al.'s examples of feminine-coded hiring language."

@@ -1,0 +1,22 @@
+model,set,sentences_right,n_sentences,pairs_right,n_pairs
+Original,list,58,74,19,32
+Original,off_list,28,30,0,0
+Original,mixed,10,10,5,5
+BERT 42,list,53,74,15,32
+BERT 42,off_list,30,30,0,0
+BERT 42,mixed,10,10,5,5
+BERT 43,list,55,74,16,32
+BERT 43,off_list,30,30,0,0
+BERT 43,mixed,9,10,4,5
+BERT 44,list,57,74,18,32
+BERT 44,off_list,29,30,0,0
+BERT 44,mixed,10,10,5,5
+RoBERTa 42,list,59,74,18,32
+RoBERTa 42,off_list,29,30,0,0
+RoBERTa 42,mixed,10,10,5,5
+RoBERTa 43,list,53,74,13,32
+RoBERTa 43,off_list,29,30,0,0
+RoBERTa 43,mixed,9,10,4,5
+RoBERTa 44,list,56,74,16,32
+RoBERTa 44,off_list,28,30,0,0
+RoBERTa 44,mixed,9,10,4,5

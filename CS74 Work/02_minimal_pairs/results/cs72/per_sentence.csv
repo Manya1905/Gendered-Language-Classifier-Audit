@@ -1,0 +1,115 @@
+pair_id,set,keyword,sentence_text,label,Original,BERT 42,BERT 43,BERT 44,RoBERTa 42,RoBERTa 43,RoBERTa 44,BERT right (of 3),RoBERTa right (of 3)
+1,list,competitive,We have a competitive salary.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+1,list,competitive,We have a competitive culture.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+2,list,analytical,An analytical mindset is required.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+2,list,analytical,Experience with analytical instruments is required.,neutral,masculine,masculine,neutral,masculine,masculine,masculine,masculine,1,0
+3,list,intellectual,Intellectual property knowledge is a plus.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+3,list,intellectual,Intellectual curiosity is a plus.,masculine,neutral,neutral,neutral,neutral,neutral,neutral,neutral,0,0
+4,list,autonomous,You will work in an autonomous style.,masculine,masculine,masculine,neutral,masculine,neutral,neutral,neutral,2,0
+4,list,autonomous,You will work on autonomous systems.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+5,list,independent,This role is for an independent contractor.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+5,list,independent,This role is for an independent thinker.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+6,list,dominant,We seek a dominant personality.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+6,list,dominant,We seek a dominant market position.,masculine,neutral,neutral,masculine,masculine,masculine,masculine,masculine,2,3
+7,list,aggressive,We value aggressive pricing.,neutral,neutral,neutral,masculine,masculine,neutral,neutral,neutral,1,3
+7,list,aggressive,We value aggressive people.,masculine,masculine,masculine,masculine,masculine,masculine,neutral,masculine,3,2
+8,list,ambitious,We have an ambitious team.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+8,list,ambitious,We have an ambitious roadmap.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+9,list,active,An active security clearance is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+9,list,active,An active personality is required.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+10,list,principles,You must uphold your principles.,masculine,neutral,neutral,neutral,neutral,feminine,neutral,neutral,0,0
+10,list,principles,You must uphold accounting principles.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+11,list,challenge,Candidates must complete a coding challenge.,neutral,neutral,neutral,neutral,neutral,neutral,masculine,masculine,3,1
+11,list,challenge,Candidates must enjoy a challenge.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+12,list,lead,You will take the lead.,neutral,masculine,neutral,neutral,neutral,neutral,masculine,masculine,3,1
+12,list,lead,You will handle lead generation.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+13,list,athletic,Athletic facilities are available.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+13,list,athletic,Athletic candidates are preferred.,masculine,neutral,neutral,neutral,neutral,neutral,neutral,neutral,0,0
+14,list,competition,Our culture reflects internal competition.,masculine,masculine,neutral,neutral,masculine,masculine,masculine,masculine,1,3
+14,list,competition,Our pricing reflects market competition.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+15,list,hierarchy,You will maintain the file hierarchy.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+15,list,hierarchy,You will respect the hierarchy.,masculine,neutral,neutral,neutral,neutral,neutral,neutral,neutral,0,0
+16,list,opinion,You will voice your opinion.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+16,list,opinion,You will draft a legal opinion.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+17,list,persist,The data must persist through restarts.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+17,list,persist,The candidate must persist through setbacks.,masculine,neutral,neutral,neutral,neutral,neutral,neutral,neutral,0,0
+18,list,support,Our team provides moral support.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+18,list,support,Our team provides technical support.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+19,list,supportive,You will work in supportive housing.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+19,list,supportive,You will work in a supportive culture.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+20,list,committed,Committed staff are essential.,feminine,neutral,neutral,feminine,feminine,feminine,feminine,feminine,2,3
+20,list,committed,Committed funds are essential.,neutral,neutral,neutral,neutral,neutral,neutral,feminine,feminine,3,1
+21,list,connect,You will connect each device quickly.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+21,list,connect,You will connect with each person quickly.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+22,list,dependable,We hire dependable people.,feminine,feminine,neutral,neutral,neutral,feminine,feminine,neutral,0,2
+22,list,dependable,We build dependable products.,neutral,feminine,feminine,feminine,feminine,neutral,neutral,neutral,0,3
+23,list,reliable,Our systems are reliable and efficient.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+23,list,reliable,Our staff are reliable and efficient.,feminine,feminine,neutral,neutral,neutral,feminine,feminine,feminine,0,3
+24,list,trust,You will protect each client's trust.,neutral,feminine,feminine,feminine,feminine,feminine,feminine,feminine,0,0
+24,list,trust,You will protect each client's trust account.,neutral,neutral,feminine,feminine,feminine,neutral,neutral,neutral,0,3
+25,list,loyalty,Loyalty program experience is a plus.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+25,list,loyalty,Loyalty to your coworkers is a plus.,feminine,neutral,neutral,neutral,feminine,feminine,feminine,feminine,1,3
+26,list,quiet,We prefer quiet personalities.,feminine,neutral,neutral,neutral,neutral,neutral,neutral,neutral,0,0
+26,list,quiet,We offer quiet workspaces.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+27,list,pleasant,You will have a pleasant office.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+27,list,pleasant,You will have a pleasant attitude.,feminine,feminine,neutral,neutral,neutral,neutral,neutral,neutral,0,0
+28,list,gentle,This role needs a gentle manner.,feminine,feminine,neutral,feminine,feminine,neutral,neutral,neutral,2,0
+28,list,gentle,This role has a gentle learning curve.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+29,list,sensitive,You will handle sensitive information.,neutral,neutral,neutral,neutral,neutral,neutral,feminine,neutral,3,2
+29,list,sensitive,You will be sensitive to others.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+30,list,cooperative,You will work in a cooperative way.,feminine,feminine,feminine,feminine,feminine,neutral,neutral,neutral,3,0
+30,list,cooperative,You will work for an electric cooperative.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+31,list,tender,Experience with tender submissions is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+31,list,tender,A tender manner is required.,feminine,neutral,neutral,neutral,neutral,neutral,neutral,feminine,0,1
+33,list,understanding,An understanding of SQL is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+33,list,understanding,An understanding nature is required.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+34,list,warm,You will work with a warm demeanor.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+34,list,warm,You will work in warm conditions.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+35,list,kind,You will handle every kind of client request.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+35,list,kind,You will be kind to every client.,feminine,feminine,feminine,feminine,feminine,feminine,neutral,feminine,3,2
+36,list,empathy,Experience showing empathy is a plus.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+36,list,empathy,Experience with empathy mapping is a plus.,neutral,feminine,feminine,feminine,feminine,feminine,feminine,feminine,0,0
+37,list,nurturing,Experience with email nurturing is required.,neutral,feminine,feminine,feminine,feminine,feminine,feminine,feminine,0,0
+37,list,nurturing,A nurturing nature is required.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+38,list,together,We pull together as one team.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+38,list,together,We pull together the monthly reports.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+39,mixed,interpersonal,Strong interpersonal skills are required.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+39,mixed,interpersonal,Strong analytical and interpersonal skills are required.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+40,off_list,driven,A driven personality is required.,neutral,masculine,neutral,neutral,neutral,masculine,neutral,masculine,3,1
+40,off_list,driven,Experience with driven piles is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+41,off_list,tough,You must work with tough materials.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+41,off_list,tough,You must be tough under pressure.,neutral,neutral,neutral,neutral,neutral,neutral,masculine,masculine,3,1
+42,off_list,grit,Real grit is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+42,off_list,grit,Experience with grit blasting is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+43,off_list,hungry,You will serve hungry guests.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+43,off_list,hungry,You will be hungry to win.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+44,off_list,patient,A patient demeanor is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+44,off_list,patient,Patient intake experience is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+45,off_list,sweet,You will find the pricing sweet spot.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+45,off_list,sweet,You will bring a sweet personality.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+46,off_list,graceful,A graceful manner is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+46,off_list,graceful,Experience with graceful degradation is required.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+47,off_list,soft,Experience with soft launches is a plus.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+47,off_list,soft,A soft demeanor is a plus.,neutral,feminine,neutral,neutral,feminine,neutral,neutral,neutral,2,3
+48,off_list,bold,You will use a bold approach.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+48,off_list,bold,You will use a bold font.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+49,off_list,risk,You will assess risk daily.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+49,off_list,risk,You will embrace risk daily.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+50,off_list,dynamic,We hire dynamic people.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+50,off_list,dynamic,We build dynamic web pages.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+51,off_list,strong,We value strong encryption.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+51,off_list,strong,We value strong personalities.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+52,off_list,delicate,You will need a delicate touch.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+52,off_list,delicate,You will handle delicate instruments.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+53,off_list,welcoming,We have a welcoming lobby.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+53,off_list,welcoming,We have a welcoming team.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+54,off_list,helpful,We value helpful people.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+54,off_list,helpful,We value helpful documentation.,neutral,neutral,neutral,neutral,neutral,neutral,neutral,neutral,3,3
+55,mixed,supportive,We seek a supportive colleague.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+55,mixed,supportive,We seek a supportive and decisive colleague.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+56,mixed,dependable,Candidates should be dependable and ambitious.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+56,mixed,dependable,Candidates should be dependable.,feminine,feminine,feminine,neutral,feminine,feminine,neutral,neutral,2,1
+57,mixed,cooperative,A cooperative attitude is essential.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
+57,mixed,cooperative,A cooperative and confident attitude is essential.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+58,mixed,compassionate,We need a compassionate and independent team member.,masculine,masculine,masculine,masculine,masculine,masculine,masculine,masculine,3,3
+58,mixed,compassionate,We need a compassionate team member.,feminine,feminine,feminine,feminine,feminine,feminine,feminine,feminine,3,3
